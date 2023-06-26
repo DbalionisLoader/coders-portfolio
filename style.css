@@ -91,7 +91,9 @@ ul {
    
 }
 
-
+#porfolio-header{
+    font-size: 28px;
+}
 
 .project-box{
     flex:1;
@@ -125,3 +127,41 @@ ul {
 .box-text-wrapper {
     padding-left: 8px;
 }
+
+.contact-form {
+    
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
