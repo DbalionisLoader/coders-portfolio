@@ -9,10 +9,11 @@ body{
    
 }
 
-.header,.hero-wrapper {
+.header,.hero-wrapper,.project-wrapper {
     width: 1420px;
     max-width: 100%;
     margin-bottom: 240px;
+    
 
 }
 
@@ -27,9 +28,7 @@ body{
     padding: 0;
     margin: 0;
 }
-.header-links{
-   
-}
+
 
 ul {
     list-style: none;
@@ -65,3 +64,49 @@ ul {
     height: auto;
 }
 
+.porfolio-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.porfolio-header{
+
+}
+
+.project-wrapper{
+    display: flex;
+    gap:  16px;
+    flex:1;
+   
+}
+
+
+
+.project-box{
+    flex:1;
+    width: 100%;
+    height: auto;
+    background-color: rgb(185, 185, 38);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.project-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tag-line-wrapper {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0px 8px 8px;
+}
+
+.tag{
+    background-color: rgb(121, 119, 119);
+    padding: 4px;
+    border-radius: 8px;
+}
