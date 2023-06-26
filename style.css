@@ -1,12 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
-    background-color: rgb(22, 26, 58);
+    background-color: rgb(11, 14, 36);
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     align-items: center; 
    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    color:#C84C09;
 }
 
 .header,.hero-wrapper,.project-wrapper {
@@ -69,9 +82,7 @@ ul {
     flex-direction: column;
 }
 
-.porfolio-header{
 
-}
 
 .project-wrapper{
     display: flex;
@@ -86,7 +97,7 @@ ul {
     flex:1;
     width: 100%;
     height: auto;
-    background-color: rgb(185, 185, 38);
+    background-color: #436436;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -106,7 +117,11 @@ ul {
 }
 
 .tag{
-    background-color: rgb(121, 119, 119);
-    padding: 4px;
+    background-color: #C84C09;
+    padding: 2px 4px 2px 4px;
     border-radius: 8px;
+}
+
+.box-text-wrapper {
+    padding-left: 8px;
 }
