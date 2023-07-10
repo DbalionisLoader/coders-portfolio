@@ -18,14 +18,14 @@ body{
 }
 
 
-.header,.hero-wrapper,.project-wrapper {
+.header,.hero-wrapper {
     width: 1420px;
     max-width: 100%;
     margin-bottom: 240px;
-
-    
+    padding-left: 16px;
 
 }
+
 
 .header{
     margin-top: 16px;
@@ -93,17 +93,14 @@ li{
 
 }
 
-.porfolio-wrapper{
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .project-wrapper{
+    width: 1420px;
     display: flex;
-    gap:  16px;
-    flex:1;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
    
 }
 
@@ -111,10 +108,12 @@ li{
     font-size: 28px;
 }
 
+
+
 .project-box{
     flex:1;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100%;
     background-color: #436436;
     align-items: center;
     justify-content: center;
@@ -132,6 +131,7 @@ li{
     display: flex;
     gap: 8px;
     padding: 8px 0px 8px 8px;
+    flex-wrap: wrap;
 }
 
 .tag{
@@ -142,6 +142,7 @@ li{
 
 .box-text-wrapper {
     padding-left: 8px;
+    overflow-wrap: break-word;
 }
 
 .contact-wrapper{
@@ -193,3 +194,15 @@ li{
     background-color: rgb(22, 10, 77);
     justify-content: center;
 }
+
+/* Responsive section */
+
+@media (max-width: 800px) {
+    .project-wrapper {
+      flex-direction: column;
+      padding-right: 16px;
+      width: 100vw;
+      margin:auto;
+    }
+  
+  }
