@@ -210,10 +210,11 @@ li{
     align-items: center;
     padding-top: 8px;
     padding-bottom: 8px;
+    
 }
 
-.footer h3 {
-    font-size: 1rem;
+footer h3 {
+    font-size: 0.87rem;
 }
 
 /* Responsive porfolio section */
