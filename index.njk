@@ -1,6 +1,32 @@
 ---
 layout: base.njk
-title: My Rad Nunjucks Blog Post
+eleventyImport:
+  collections: ["posts"]
 ---
+{#    <ul>
+{%- for post in collections.posts -%}
+  <li>{{ post.data.title }}</li>
+{%- endfor -%}
+</ul> #}
+    {# Test project #}
+    {%- for post in collections.posts -%}
+            <div class="project-box">
+            <a href="{{ post.data.link }}">
+              <img class="img-fluid" src="{{ post.data.imageUrl }}"  alt="{{ post.imageAlt }}">
+            </a>
+              <div class="tag-line-wrapper">
+                  {# tag in local var, post.data.tech is a array #}
+                    {% for tag in post.data.tech %}
+               <div class="tag">{{ tag }}</div>
+                  {% endfor %}
+              </div>
+              <div class="box-text-wrapper">
+                <a href="helloworld.html" aria-label="Link a view a hello world webpage">
+                  <h2>{{ post.data.title }}</h2>
+                </a>  
+                  <p>{{ post.content | safe }}</p>
+              </div>
+        </div>
+        {%- endfor -%}
 
-<h1>Hello</h1>
+        {# EndTest #}
