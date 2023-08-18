@@ -1,5 +1,5 @@
 ---
-title: Loops
+title: Portfolio 
 
 ---
 
@@ -21,20 +21,20 @@ title: Loops
     <header class="header">
       <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">D.Balionis</a>
+          <a class="navbar-brand text-light" href="/">D.Balionis</a>
           <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link active" href="#" aria-current="page">Home</a>
+                <a class="nav-link active" href="/" aria-current="page">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Portfolio</a>
+                <a class="nav-link " href="#porfolio-header">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">About me</a>
+                <a class="nav-link " href="/about">About me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ">Contact</a>
@@ -47,22 +47,32 @@ title: Loops
     <div class="hero-wrapper">
      
       <div class="hero-intro">
-        <h1>Hi, I'm Dovydas <br> A Starter JAMstack Developer</h1>
-        <p> Welcome to my portfolio! I am a dedicated JAMstack developer with a passion for creating modern, visually captivating websites. 
+        <h1>Hi, I'm Dovydas <br> A Junior<br> Full  Stack <br> Developer</h1>
+        <p class="hero-desc pt-4 pb-1">Welcome to my portfolio 1.1! <br> I'm a web developer based in West Yorkshire, UK. I began my career on WordPress and steadily growing my skillset to become a full-stack developer. <br> 
         </p>
-        <a href="https://github.com/DbalionisLoader">
-        <img src="../images/social.png" alt="git hub icon" width="64" height="64">
-        </a>
+        <p class="hero-desc pb-4"> Whether it's a single-page site or a complex e-commerce platform, I am fully prepared to tackle any project that comes my way.
+        </p>
+        <div class="container p-0 gap d-flex ">
+          <a href="https://github.com/DbalionisLoader" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-github pe-4 icon-colour" alt="github icon to my github page"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dovydas-balionis-7ab725174/" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-linkedin icon-colour"  alt="linkedin icon to my profile"></i>
+          </a>
+        </div>
       </div>
       <div class="hero-image">
-        <img class="hero-image-main" src="../images/codemonkey4.png" alt="image of a coding monkey">
+        <img class="hero-image-main image-fluid" src="../images/codemonkey4.png" alt="image of a coding monkey">
       </div>    
     </div>
     
 
   <section class="porfolio-wrapper">
-    <div id="porfolio-header">
-      <h2>My Portfolio - About that...</h2>
+    <div id="porfolio-header" class="d-flex">
+      <div> <img src = "../images/JamProgram3.svg" style="height: 140px"  alt="My Happy SVG"/></div>
+      <div class="d-flex align-items-end ps-3">
+      <h2>My Portfolio - Still Growing...</h2>
+      </div>
     </div>
       <div class="project-wrapper">   
        {{ content | safe }}
