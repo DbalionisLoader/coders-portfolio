@@ -133,8 +133,11 @@ li{
 }
 
 /*===== Flex porfolio boxes =====*/
-
-
+.portf-header h1{
+font-size: 2.5rem;  
+font-weight: 600;
+line-height: 1.2em;
+}
 .porfolio-wrapper {
     width: 1420px; 
     max-width: 100%; /*This line contains the wrapper content within the window then resizing*/
