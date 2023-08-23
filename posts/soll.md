@@ -12,7 +12,5 @@ tech:
 - HTML 
 - CSS
 - PHP
-
- 
 ---
 A test of templating power.
