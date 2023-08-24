@@ -9,7 +9,40 @@ eleventyImport:
 {%- endfor -%}
 </ul> #}
     {# Test project #}
-    {%- for post in collections.posts | reverse -%}
+    
+    <div class="hero-wrapper">
+     
+      <div class="hero-intro pe-5">
+        <h1>Hi, I'm Dovydas <br> A Junior<br> Full  Stack <br> Developer</h1>
+        <p class="hero-desc pt-4 pb-1">Welcome to my portfolio 1.1! <br> I'm a web developer based in West Yorkshire, UK. I began my career on WordPress and steadily growing my skillset to become a full-stack developer. <br> 
+        </p>
+        <p class="hero-desc pb-4"> Whether it's a single-page site or a complex e-commerce platform, I am fully prepared to tackle any project that comes my way.
+        </p>
+        <div class="container p-0 gap d-flex ">
+          <a href="https://github.com/DbalionisLoader" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-github pe-4 icon-colour" alt="github icon to my github page"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dovydas-balionis-7ab725174/" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-linkedin icon-colour"  alt="linkedin icon to my profile"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img class="hero-image-main image-fluid" src="../images/codemonkey4.png" alt="image of a coding monkey">
+      </div>    
+    </div>
+    
+  <section class="porfolio-wrapper">
+    <div id="porfolio-header" class="d-flex flex-lg-row flex-sm-column">
+      <div> <img src = "../images/JamProgram3.svg" style="height: 140px"  alt="My Happy SVG"/></div>
+      <div class="d-flex align-items-end ps-lg-4 pt-sm-2 portf-header">
+      <h1>My Portfolio</h1>
+      </div>
+      
+    </div>
+ {# project-wrapper #}
+      <div class="project-wrapper mt-4">   
+        {%- for post in collections.posts | reverse -%}
             <div class="project-box">
             <a href="{{ post.data.link }}">
               <img class="img-fluid" src="{{ post.data.imageUrl }}"  alt="{{ post.imageAlt }}">
@@ -30,5 +63,13 @@ eleventyImport:
               </a> 
         </div>
         {%- endfor -%}
+      </div>
+        <div class="container p-4">
+         <div id="contact-header">
+          <h2>Contact me - if you got work</h2>
+         </div>    
+        </div>
+  </section>
+
 
         {# EndTest #}
