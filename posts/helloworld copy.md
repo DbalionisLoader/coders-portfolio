@@ -1,6 +1,6 @@
 ---
-title: JS Tip Calculator
-name:  JS Tip Calculator
+title: My Blog - Coder's Guild Assignment
+name:  My Blog
 imageUrl: ../images/tipcallg1.jpg
 imageAlt: A picture of a tip calculating javascrip application UI
 link: www.google.com

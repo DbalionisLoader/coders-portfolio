@@ -1,15 +1,12 @@
 ---
-title: Soll.uk Automotive Paint title
-name: Soll.uk Automotive Paint
-imageUrl: ../images/comingsoon.jpg
-imageAlt: A screenshot of helloworld project
-link: www.google.com
-stack : 
-- taglet: kkd,ssd
-- taglet2: ffs
+title: Soll.uk Automotive Paint Store
+name: Soll.uk Automotive Paint Store
+imageUrl: ../images/solluklg2.jpg
+imageAlt: A screenshot picture of the Soll.uk automotive paint store
+link: https://www.soll.uk/
 date: 2023-07-03
 tech:
-- HTML 
+- WordPress
 - CSS
 - PHP
 ---

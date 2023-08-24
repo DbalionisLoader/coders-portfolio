@@ -1,20 +1,17 @@
 html{
     scroll-behavior: smooth;
-    
 }
-
 
 body{
     height: 100vh;
     background-color: rgb(11, 14, 36);
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     align-items: center; 
     padding: 0;
     margin: 0;
-   
 }
 
 
@@ -25,7 +22,6 @@ body{
     max-width: 100%;
     margin-bottom: 180px;
     padding-left: 16px;
-
 }
 
 
@@ -111,7 +107,7 @@ li{
 
 .hero-intro p{
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -138,18 +134,15 @@ font-size: 2.5rem;
 font-weight: 600;
 line-height: 1.2em;
 }
-.porfolio-wrapper {
-    width: 1420px; 
-    max-width: 100%; /*This line contains the wrapper content within the window then resizing*/
 
-}
 
 .project-wrapper{
-    
+    width: 1420px; 
     display: flex;
     padding: 0;
-    text-align: left;
-    flex-wrap: wrap;
+   /*  text-align: left;  */
+    flex-wrap: wrap; 
+    max-width: 100%; /*This line contains the wrapper content within the window then resizing*/
 }
 
 #porfolio-header, #contact-header{
@@ -165,41 +158,69 @@ line-height: 1.2em;
 }
 
 .project-box{
-    min-width: 12em;
-    background-color: #436436;
+    min-width: 420px;
+    max-width: 457px;
+    background-color: #1293BA;
     justify-content: center;
     margin: .5em;
-    flex:1 0;
-  
+    flex: 1 1 0px;
+    padding-bottom: 8px;
 }
 
 .project-box img{
    width: 100%;
    height: auto;
+   max-height: 400px;
+   object-fit: cover;
 }
 
 .project-box a{
-    color: white;
+    color: #121317;
     text-decoration: none;
 }
 
 .tag-line-wrapper {
     display: flex;
     gap: 8px;
-    padding: 8px 0px 8px 8px;
+    padding: 16px 0px 8px 16px;
     flex-wrap: wrap;
 }
 
 .tag{
-    background-color: #d34107;
+    background-color: #272932;
     padding: 2px 4px 2px 4px;
     border-radius: 8px;
 }
 
 .box-text-wrapper {
-    padding-left: 8px;
+    margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     overflow-wrap: break-word;
 }
+
+.box-text-wrapper h2{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.box-text-wrapper p{
+    color: #121317;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 15px;
+} 
+.readmore-link{
+    padding: 0px 8px 8px 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.readmore-link:hover{
+   text-decoration: underline;
+}
+
 
 .contact-wrapper{
     padding-bottom: 120px;

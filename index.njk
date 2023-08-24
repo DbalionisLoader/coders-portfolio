@@ -9,7 +9,7 @@ eleventyImport:
 {%- endfor -%}
 </ul> #}
     {# Test project #}
-    {%- for post in collections.posts -%}
+    {%- for post in collections.posts | reverse -%}
             <div class="project-box">
             <a href="{{ post.data.link }}">
               <img class="img-fluid" src="{{ post.data.imageUrl }}"  alt="{{ post.imageAlt }}">
@@ -23,9 +23,11 @@ eleventyImport:
               <div class="box-text-wrapper">
                 <a href="helloworld.html" aria-label="Link a view a hello world webpage">
                   <h2>{{ post.data.title }}</h2>
-                </a>  
+                 
                   <p>{{ post.content | safe }}</p>
               </div>
+              <div class="link-opacity-10-hover readmore-link hover:underline">Read more </div>
+              </a> 
         </div>
         {%- endfor -%}
 

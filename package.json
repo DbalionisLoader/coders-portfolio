@@ -12,6 +12,7 @@
     "bootstrap": "^5.3.0"
   },
   "devDependencies": {
+    "eleventy-google-fonts": "^0.1.0",
     "parcel": "^2.9.3"
   }
 }
