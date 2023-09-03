@@ -37,7 +37,6 @@ body{
 .icon-colour{
     color:#16aedb;
     font-size: 50px;
-    transition: all .2s ease-in-out;
 }
 
 
@@ -129,7 +128,8 @@ li{
 }
 
 /*===== Flex porfolio boxes =====*/
-.portf-header h1{
+/* Header font sizes */
+.portf-header h1, .contact-header h2{
 font-size: 2.5rem;  
 font-weight: 600;
 line-height: 1.2em;
@@ -146,7 +146,7 @@ line-height: 1.2em;
     max-width: 100%; /*This line contains the wrapper content within the window then resizing*/
 }
 
-#porfolio-header, #contact-header{
+#porfolio-header{
     font-size: 28px;
 }
 
@@ -154,9 +154,6 @@ line-height: 1.2em;
     margin-left: 8px;
 }
 
-#porfolio-header {
-    text-align: left
-}
 
 .project-box{
     width: 420;
@@ -273,6 +270,7 @@ background: none;
     font-size: 16px;
 }
 
+
 .contact-container{
     max-width: 400px;
     margin: 0 auto;
@@ -339,6 +337,12 @@ footer h3 {
     .hero-image {
         margin-bottom: 40px;
     }
+
+    /* .porfolio-wrapper{
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    } */
    
    
     
@@ -370,5 +374,11 @@ footer h3 {
     
     .card-wrapper-mobile{
         margin:16px;
+    }
+
+    #porfolio-header{
+        margin-left:24px;
+        margin-right: 24px;
+        
     }
 }

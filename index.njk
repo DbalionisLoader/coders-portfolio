@@ -2,14 +2,7 @@
 layout: base.njk
 eleventyImport:
   collections: ["posts"]
----
-{#    <ul>
-{%- for post in collections.posts -%}
-  <li>{{ post.data.title }}</li>
-{%- endfor -%}
-</ul> #}
-    {# Test project #}
-    
+---    
     <div class="hero-wrapper">
      
       <div class="hero-intro pe-5">
@@ -18,12 +11,15 @@ eleventyImport:
         </p>
         <p class="hero-desc pb-4"> Whether it's a single-page site or a complex e-commerce platform, I am fully prepared to tackle any project that comes my way.
         </p>
-        <div class="container p-0 gap d-flex ">
+        <div class="container p-0 d-flex align-items-center">
           <a href="https://github.com/DbalionisLoader" target="_blank" rel="noreferrer noopener">
             <i class="bi bi-github pe-4 icon-colour" alt="github icon to my github page"></i>
           </a>
           <a href="https://www.linkedin.com/in/dovydas-balionis-7ab725174/" target="_blank" rel="noreferrer noopener">
-            <i class="bi bi-linkedin icon-colour"  alt="linkedin icon to my profile"></i>
+            <i class="bi bi-linkedin pe-4 icon-colour"  alt="linkedin icon to my linked in profile"></i>
+          </a>
+           <a href="https://codepen.io/dbalionis" target="_blank" rel="noreferrer noopener">
+            <i class="fa-brands fa-codepen icon-colour"  alt="codepen icon to my codepen profile"></i>
           </a>
         </div>
       </div>
@@ -31,9 +27,9 @@ eleventyImport:
         <img class="hero-image-main image-fluid" src="../images/codemonkey4.png" alt="image of a coding monkey">
       </div>    
     </div>
-    
+    {# flex-xl-row flex-column #}
   <section class="porfolio-wrapper">
-    <div id="porfolio-header" class="d-flex flex-lg-row flex-sm-column">
+    <div id="porfolio-header" class="d-flex justify-content-lg-start justify-content-center">
       <div> <img src = "../images/JamProgram3.svg" style="height: 140px"  alt="My Happy SVG"/></div>
       <div class="d-flex align-items-end ps-lg-4 pt-sm-2 portf-header">
       <h1>My Portfolio</h1>
@@ -63,7 +59,8 @@ eleventyImport:
               </a> 
         </div>
         {%- endfor -%}
-      </div>
+      </div> 
+      </section>
         <div id="contact-form" class="container p-4 contact-wrapper">
          <div id="contact-header" class="text-center contact-header">
            <h2>Contact Me</h2>
@@ -83,7 +80,7 @@ eleventyImport:
         </div> 
      
        
-  </section>
+ 
 
 
         {# EndTest #}
