@@ -135,9 +135,10 @@ font-weight: 600;
 line-height: 1.2em;
 }
 
-
+.porfolio-wrapper {
+    max-width: 1420px ;
+}
 .project-wrapper{
-    width: 1420px; 
     display: flex;
     padding: 0;
    /*  text-align: left;  */
@@ -158,9 +159,11 @@ line-height: 1.2em;
 }
 
 .project-box{
+    width: 420;
     min-width: 420px;
     max-width: 457px;
-    background-color: #1293BA;
+    /* background-color: #1293BA; */
+    background-color: #eef2f3;
     justify-content: center;
     margin: .5em;
     flex: 1 1 0px;
@@ -213,7 +216,7 @@ line-height: 1.2em;
 } 
 .readmore-link{
     padding: 0px 8px 8px 16px;
-    color: white;
+    color: #1293BA;
     font-weight: 500;
 }
 
@@ -223,17 +226,57 @@ line-height: 1.2em;
 
 
 .contact-wrapper{
-    padding-bottom: 120px;
-    margin-bottom: 120px;
+    margin-top: 240px;
+    margin-bottom: 240px;
 }
 
 .contact-form {
-    
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
+  .input-group .form-control {
+    background-color: transparent; /* Remove background color */
+    color: #fff; /* Change font color to your desired color */
+    border-bottom: solid 2px #fff; /* Remove the default input border */
+    border-radius: 0; /* Remove any border-radius if needed */
+    text-align: center;
+  }  
+
+  .input-group .form-control::placeholder{
+    color: #fff;
+    text-align: center;
+ 
+  }
+
+  .input-group  span {
+    background-color: transparent;
+    /* Need to remove border first, to get rid of small border */
+    border: none;
+    border-bottom: solid 2px #fff;
+    border-radius: 0; 
+  }
+
+  .input-group .bi-envelope {
+    color: white;
+    font-size: 20px;
+  }
+
+/* .email-input input {
+font-size: 16px;
+color: #fff;
+background: none;
+}
+ */
+.contact-header p{
+    font-size: 16px;
+}
+
+.contact-container{
+    max-width: 400px;
+    margin: 0 auto;
+}
   .form-group {
     margin-bottom: 20px;
   }
@@ -249,9 +292,9 @@ line-height: 1.2em;
     padding: 10px;
     border: none;
     border-radius: 0;
-    background-color: white;
   }
   
+  /* Contact Button */
   button[type="submit"] {
     background-color: #16adda;
     color: white;
@@ -264,6 +307,8 @@ line-height: 1.2em;
   button[type="submit"]:hover {
     background-color: #45a049;
   }
+    
+  /* Contact Button END*/
 
 .footer{
     background-color: rgb(22, 10, 77);
@@ -294,19 +339,9 @@ footer h3 {
     .hero-image {
         margin-bottom: 40px;
     }
-    .porfolio-wrapper{
-        width: 100vw;
-        margin:auto;
-    }
-    .project-wrapper {
-      flex-direction: column;
-      padding-right: 16px;
-      width: 100vw;
-      margin:auto;
-      height: auto;
-      overflow: hidden;
-    }
-  
+   
+   
+    
   } 
 
   @media (max-width: 992px){
@@ -326,3 +361,14 @@ footer h3 {
    
     
   }
+
+  @media (max-width: 500px){
+    .project-box {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    
+    .card-wrapper-mobile{
+        margin:16px;
+    }
+}
