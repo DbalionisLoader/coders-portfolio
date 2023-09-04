@@ -135,7 +135,7 @@ font-weight: 600;
 line-height: 1.2em;
 }
 
-.porfolio-wrapper {
+.porfolio-wrapper, .footer-wrapper {
     max-width: 1420px ;
 }
 .project-wrapper{
@@ -309,12 +309,7 @@ background: none;
   /* Contact Button END*/
 
 .footer{
-    background-color: rgb(22, 10, 77);
-    justify-content: center;
-    align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    
+    background-color: #191e46;    
 }
 
 footer h3 {
