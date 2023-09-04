@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(11, 14, 36);
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ body{
     color: white;
     align-items: center; 
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 
@@ -260,6 +260,10 @@ line-height: 1.2em;
     font-size: 20px;
   }
 
+  .main-wrapper {
+    flex: 1 0 auto;
+  }
+
 /* .email-input input {
 font-size: 16px;
 color: #fff;
@@ -310,6 +314,7 @@ background: none;
 
 .footer{
     background-color: #191e46;    
+    flex: 0 0 auto;
 }
 
 footer h3 {
