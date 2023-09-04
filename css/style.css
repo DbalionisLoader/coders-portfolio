@@ -320,6 +320,13 @@ background: none;
 footer h3 {
     font-size: 0.87rem;
 }
+.link-hover:link{
+    text-decoration:none;
+}
+
+.link-hover:hover{
+    text-decoration: underline solid 2px white;
+}
 
 /* Responsive porfolio section */
 
