@@ -1,6 +1,6 @@
 ---
-title: My Blog - Coder's Guild Assignment
-name:  My Blog
+title: Boostrap Band
+name:  Boostrap Band
 imageUrl: ../images/tipcallg1.jpg
 imageAlt: A picture of a tip calculating javascrip application UI
 link: www.google.com
