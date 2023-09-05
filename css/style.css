@@ -222,6 +222,10 @@ line-height: 1.2em;
    text-decoration: underline;
 }
 
+.js-project-box {
+    background-color: #b4e3ef;
+}
+
 
 .contact-wrapper{
     margin-top: 240px;
