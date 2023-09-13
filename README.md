@@ -2,8 +2,8 @@
 
 Hello there! Welcome to anorther growing* junior developer portfolio. 
 
-I've created this portfolio using good old, original HTML and CSS, added bootstrap elements and templated everything using Nunjucks and Eleventy SSG. As for design, I combining my passion for simple design with cool functionality, high contrast colours, and we be optimizing it for accessibility and speed using Ligthouse.
-
+I've created this portfolio using good old, original HTML and CSS, added bootstrap elements and templated everything using Nunjucks and Eleventy SSG. As for the design, I combined my passion for a simple design with cool functionality, high contrast colours, and will be optimizing the site for accessibility and speed using Ligthouse.
+ 
 # Projects
 
 

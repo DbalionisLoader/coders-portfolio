@@ -13,9 +13,9 @@ title: Dovydas B. Portfolio Homepage
     {% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap' %}
     {# Bootstrap css #}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
     {# Font awesome #}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {# Local CSS #}
     <link href="../css/style.css" rel="stylesheet">
   
@@ -42,7 +42,10 @@ title: Dovydas B. Portfolio Homepage
               <li class="nav-item px-lg-3 ">
                 <a class="nav-link disabled" href="/" aria-current="page">Blog</a>
               </li>
-              <li> <a href="../index.html#contact-form"><button class="btn nav-contact-lg nav-item px-lg-3 ms-lg-3" aria-label="To contact me form">Contact</button> </a></li>
+               <li class="nav-item mobile d-block d-lg-none px-lg-3 ">
+                <a class="nav-link" href="../index.html#contact-form" aria-current="page">Contact</a>
+              </li>
+              <li class="d-none d-lg-block"> <a href="../index.html#contact-form"><button class="btn nav-contact-lg nav-item px-0 px-lg-3 ms-lg-3" aria-label="To contact me form">Contact</button> </a></li>
             </ul>
           </div>
         </div>
@@ -62,6 +65,6 @@ title: Dovydas B. Portfolio Homepage
     <p class="text-center text-white text-light">© Dovydas B. All rights reserved</p>
     </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
