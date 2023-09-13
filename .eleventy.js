@@ -1,5 +1,6 @@
 
-const eleventyGoogleFonts = require("eleventy-google-fonts");
+const eleventyGoogleFonts = require("eleventy-google-fonts"); 
+const { DateTime } = require("luxon");
 module.exports = function(eleventyConfig) {
     
     /* Plugins */
@@ -17,6 +18,15 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByGlob("./posts/portfolio/*.md");
       });
 
+      /* Date filter */
+      eleventyConfig.addFilter("postDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+      });
+
+
+
+    /* Watch for changes */ 
+    eleventyConfig.addWatchTarget("css/");
     /* Returns */  
      return { 
         dir: {      

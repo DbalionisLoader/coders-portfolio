@@ -1,5 +1,50 @@
 ---
 layout: base.njk
 ---
+{% set previousPost = collections.posts | getPreviousCollectionItem %}
+{% set nextPost = collections.posts | getNextCollectionItem %}
+<div class="container">
+<div class="container back-link mb-5"><a href="/">Go back to homepage</a></div>    
 
-<article>{{ content | safe}}</article>
+<div class="container d-flex flex-column">
+    <h2>Type of project</h2>
+    <h1>{{title}}</h1>
+    <p>Website purpose</p>
+</div>
+<div class="container">
+       <img class="img-fluid" src="{{ mainImageUrl }}" alt="{{ imageAlt }}"> 
+</div>
+<div class="container pt-3 mt-5">
+    <div class="row">
+        <div class="col-4">
+            <h3>Role</h3>
+            <p>Designer and developer</p>
+        </div>
+         <div class="col-4">
+            <h3>Date</h3>
+            <p>{{ date | postDate }}</p>
+         </div>
+          <div class="col-4"><h3>Tools</h3>
+           <p>
+            {% for tag in tech %}
+               <span>{{ tag }}</span>
+                  {% endfor %}
+            </p>
+          </div>
+    </div>
+</div>
+<div class="container mt-5 mb-5">
+    <h2>Project description</h2>
+    <p>{{ content | safe}}</p>
+</div>
+{# Next/Preview post navigation #}
+<div class="container mb-5 d-flex justify-content-between"> 
+    <div class="back-link">
+        {% if previousPost %}Previous Project: <a  href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+    </div>  
+    <div class="back-link">
+         {% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+    </div> 
+ </div> 
+</div>
+

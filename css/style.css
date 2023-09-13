@@ -378,3 +378,14 @@ footer h3 {
         
     }
 }
+
+
+/* Portfolio Case Study */
+
+.back-link a{
+    color: #16adda;
+}
+
+.back-link a:hover{
+    color: #ffffff;
+}
