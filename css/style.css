@@ -124,6 +124,8 @@ font-weight: 600;
 line-height: 1.2em;
 }
 
+
+
 .porfolio-wrapper, .jsArticle-wrapper, .footer-wrapper {
     max-width: 1420px ;
 }
@@ -143,9 +145,6 @@ line-height: 1.2em;
     font-size: 28px;
 }
 
-#porfolio-header {
-    margin-left: 8px;
-}
 
 
 .project-box{
