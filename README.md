@@ -1,13 +1,11 @@
 # coders-portfolio
-Coders Guild Assignment Portfolio - Real portfolio
 
 Hello there! Welcome to anorther growing* junior developer portfolio. 
 
-I've created this portfolio using good old, original HTML and CSS, added bootstrap elements and Eleventy SSG. Combining my passion for simple design with cool functionality. 
+I've created this portfolio using good old, original HTML and CSS, added bootstrap elements and templated everything using Nunjucks and Eleventy SSG. As for design, I combining my passion for simple design with cool functionality, high contrast colours, and we be optimizing it for accessibility and speed using Ligthouse.
 
 # Projects
 
-This porfolio is steadily growing like a strong English oak ready to be become a mighty Ship of the line. One day. 
 
 1. Soll.uk Ecommerce website
 
