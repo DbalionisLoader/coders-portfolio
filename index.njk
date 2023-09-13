@@ -37,7 +37,7 @@ eleventyImport:
       
     </div>
  {# project-wrapper #}
-      <div class="project-wrapper card-wrapper-mobile mt-4">   
+      <div class="project-wrapper card-wrapper-mobile px-2 mt-4">   
         {%- for post in collections.posts | reverse -%}
             <div class="project-box">
             <a href="{{ post.data.link }}">
@@ -62,12 +62,12 @@ eleventyImport:
       </div> 
       </section>
       <article class="container-fluid jsArticle-wrapper mt-5">
-      <div class="portf-header text-start">
+      <div class="portf-header text-start px-2">
       <h1>My Sandbox <span><i class="fa-brands fa-js"></i></span></h1> 
       
       <p>A collection of coding excercises showcasing my JS and codings skills</p>
       </div>
-      <div class="project-wrapper card-wrapper-mobile mt-4">
+      <div class="project-wrapper card-wrapper-mobile px-2 mt-4">
           {%- for post in collections.examplePosts | reverse -%}
             <div class="project-box js-project-box">
             <a href="{{ post.data.link }}">

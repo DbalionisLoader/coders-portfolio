@@ -10,7 +10,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
     align-items: center; 
-    padding: 0;
+/*     padding: 0; */
     margin: 0; 
 }
 
@@ -362,22 +362,6 @@ footer h3 {
     
   }
 
-  @media (max-width: 500px){
-    .project-box {
-        width: 100%;
-        margin-bottom: 24px;
-    }
-    
-    .card-wrapper-mobile{
-        margin:16px;
-    }
-
-    #porfolio-header{
-        margin-left:24px;
-        margin-right: 24px;
-        
-    }
-}
 
 
 /* Portfolio Case Study */
