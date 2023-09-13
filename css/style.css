@@ -4,7 +4,7 @@ html{
 
 body{
     min-height: 100vh;
-    background-color: rgb(11, 14, 36);
+    background-color: #1a1a1d;
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
@@ -71,20 +71,11 @@ li{
     color: #16aedb;
     cursor: pointer
 } 
- .nav-contact-lg a {
-    color: #16aedb;
-}  
 
 .nav-contact-lg:hover  {
- 
-    box-shadow: 0px 2px 4px #16aedb;
+    border: 2px solid #ffffff;
+   
 } 
-
- .nav-contact-lg a:hover {
-   /*  color: #ffffff; */
-    cursor: pointer
-}  
-
  
 .hero-wrapper{
     display: flex;
@@ -188,7 +179,7 @@ line-height: 1.2em;
 }
 
 .tag{
-    background-color: #272932;
+    background-color: #1a1a1d;;
     padding: 2px 4px 2px 4px;
     border-radius: 8px;
 }
