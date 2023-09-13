@@ -28,7 +28,7 @@ eleventyImport:
       </div>    
     </div>
     {# flex-xl-row flex-column #}
-  <section class="porfolio-wrapper">
+  <section class="container-fluid porfolio-wrapper px-2">
     <div id="porfolio-header" class="d-flex justify-content-lg-start justify-content-center">
       <div> <img src = "../images/JamProgram3.svg" style="height: 140px"  alt="My Happy SVG"/></div>
       <div class="d-flex align-items-end ps-lg-4 pt-sm-2 portf-header">
@@ -37,7 +37,7 @@ eleventyImport:
       
     </div>
  {# project-wrapper #}
-      <div class="project-wrapper card-wrapper-mobile px-2 mt-4">   
+      <div class="project-wrapper card-wrapper-mobile mt-4">   
         {%- for post in collections.posts | reverse -%}
             <div class="project-box">
             <a href="{{ post.data.link }}">
