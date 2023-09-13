@@ -1,13 +1,14 @@
 ---
-title: UOL Karate Club Landing Page - Ongoing
-name:  UOL Karate Club Landing Page
-imageUrl: ../images/k-lp-blue-s-2.png
-imageAlt: A picture of a Univisity of Liverpool Karate club website
+title: UoL Karate Club Website - Ongoing
+name:  UoL Karate Club Websites
+imageUrl: ../images/uofkarateclub-thumbnail.png
+imageAlt: A picture of a Univisity of Liverpool Karate club hompage
 link: www.google.com
 date: 2023-08-20
 tech:
 - Eleventy
 - Bootstrap
+- JavaScript
 - HTML 
 - CSS
 - Figma
