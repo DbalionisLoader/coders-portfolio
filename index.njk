@@ -31,7 +31,7 @@ eleventyImport:
   <section class="container-fluid porfolio-wrapper px-2 px-lg-0">
     <div id="porfolio-header" class="d-flex flex-column  justify-content-start">
       <div> <img src = "../images/JamProgram3.svg" style="height: 140px"  alt="My Happy SVG"/></div>
-      <div class="d-flex pt-sm-2 portf-header">
+      <div class="d-flex pt-3 portf-header">
       <h1>My Portfolio</h1>
       </div>
       
@@ -61,13 +61,13 @@ eleventyImport:
         {%- endfor -%}
       </div> 
       </section>
-      <article class="container-fluid jsArticle-wrapper mt-5">
+      <article class="container-fluid jsArticle-wrapper mt-5 px-2 px-lg-0">
       <div class="portf-header text-start px-2">
       <h1>My Sandbox <span><i class="fa-brands fa-js"></i></span></h1> 
       
       <p>A collection of coding excercises showcasing my JS and codings skills</p>
       </div>
-      <div class="project-wrapper card-wrapper-mobile px-2 px-lg-0 mt-4">
+      <div class="project-wrapper card-wrapper-mobile mt-4">
           {%- for post in collections.examplePosts | reverse -%}
             <div class="project-box js-project-box">
             <a href="{{ post.data.link }}">
@@ -80,11 +80,12 @@ eleventyImport:
                   {% endfor %}
               </div>
               <div class="box-text-wrapper">
-                <a href="helloworld.html" aria-label="Link a view a hello world webpage">
+                
                   <h2>{{ post.data.title }}</h2>
                  
                   <p>{{ post.content | safe }}</p>
               </div>
+              <a href="{{ post.data.link }}" aria-label="{{ post.data.linkDesc }}">
               <div class="link-opacity-10-hover readmore-link hover:underline">View me on CodePen</div>
               </a> 
         </div>
