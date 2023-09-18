@@ -11,4 +11,4 @@ tech:
 - CSS
 - JavaScript
 ---
-An animal image gallery with filters was a very challenging assignment. Individual elements, such as the gallery, radio, and search filter implementations, were straightforward. However, combining the radio and search filter functions required a lot of refactoring and research to accommodate every possible state the filters could be in
+An animal image gallery with filters was a very challenging assignment. Individual elements, such as the gallery, radio, and search filter implementations, were straightforward. However, combining the radio and search filter functions required a lot of refactoring and research to accommodate every possible state the filters could be in.

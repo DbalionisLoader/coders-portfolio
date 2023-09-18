@@ -27,8 +27,11 @@ layout: base.njk
           <div class="col-4"><h3>Tools</h3>
            <p>
             {% for tag in tech %}
-               <span>{{ tag }}</span>
-                  {% endfor %}
+                <span>{{ tag }}</span>
+              {% if not loop.last %}
+                <span> |</span>
+              {% endif %}
+            {% endfor %}
             </p>
           </div>
     </div>
