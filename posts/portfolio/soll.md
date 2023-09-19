@@ -1,12 +1,14 @@
 ---
-title: Soll.uk Automotive Paint Store
+title: Soll.uk 
 name: Soll.uk Automotive Paint Store
+typeOfWebsite: Automotive Paint Ecommerce Store
+Role: Designer | Developer
 imageUrl: ../images/test3.png
 imageAlt: A screenshot picture of the Soll.uk automotive paint store
-mainImageUrl:  ../images/uolkarateclub-hero-2.png
+mainImageUrl:  ../images/soll-main-full.png
 link: /soll
 websiteLink: https://soll.uk/
-date: 2023-07-03
+date: 2023-02-03
 tech:
 - WordPress
 - Elementor

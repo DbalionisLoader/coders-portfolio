@@ -6,10 +6,12 @@ layout: base.njk
 <div class="container">
 <div class="container back-link mb-5"><a href="/">Go back to homepage</a></div>    
 
-<div class="container d-flex flex-column">
-    <h2>Type of project</h2>
-    <h1>{{title}}</h1>
-    <p>Website purpose</p>
+<div class="container d-flex flex-column mb-5">
+    <h1>{{ title }}</h1>
+    <p>{{ typeOfWebsite }}</p>
+    <div>
+    <a href="{{ websiteLink }}" target="_blank" rel="noopener noreferrer" class="button btn btn-primary">View Website</a>
+    </div>
 </div>
 <div class="container">
        <img class="img-fluid" src="{{ mainImageUrl }}" alt="{{ imageAlt }}"> 
@@ -18,7 +20,7 @@ layout: base.njk
     <div class="row">
         <div class="col-4">
             <h3>Role</h3>
-            <p>Designer and developer</p>
+            <p>{{Role}}</p>
         </div>
          <div class="col-4">
             <h3>Date</h3>
