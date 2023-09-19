@@ -78,17 +78,18 @@ body{
 li{
     font-size: 18px;
 }
-
+/* color: #16aedb;
+border: 2px solid #16aedb; */
  .nav-contact-lg  {
-    border: 2px solid #16aedb;
+    border: 2px solid #ffffff;
     border-radius: 8px;
-    color: #16aedb;
+    color: #ffffff;
     cursor: pointer
 } 
 
 .nav-contact-lg:hover  {
-    border: 2px solid #ffffff;
-    color: #ffffff; 
+    border: 2px solid #16aedb;
+    color: #16aedb; 
    
 } 
  
@@ -405,3 +406,12 @@ footer h3 {
 .back-link a:hover{
     color: #ffffff;
 }
+
+/* Content styling */
+.post-content p{
+    margin-bottom: 24px;
+}
+
+
+
+
