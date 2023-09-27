@@ -411,12 +411,24 @@ footer h3 {
 .project-decription-wrap p {
     font-weight: 600;
 }
+
+.custom-border {
+    border-top: 1px solid #dee2e6;  
+    border-bottom: 1px solid #dee2e6;
+    width: 100%; 
+    max-width: calc(100% - 24px); /* Fix the border extended 12px left right outside the container due to bootstrap container padding css*/
+    box-sizing: border-box;  
+    
+  }
     
 
 /* Content styling */
 .post-content p{
     margin-bottom: 24px;
 }
+
+
+
 
 /* ====== About me page ====== */
 
