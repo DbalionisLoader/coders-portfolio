@@ -1,6 +1,6 @@
 ---
-title: My Developer Blog - Ongoing
-name:  My Eleventy Blog
+title: Dovydas Balionis Developer Blog 
+name:  My Eleventy Blog - Ongoing
 typeOfWebsite: Personal Blog
 Role: Designer | Developer
 imageUrl: ../images/test4.png

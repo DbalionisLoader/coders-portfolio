@@ -395,6 +395,24 @@ footer h3 {
     color: #ffffff;
 }
 
+/* Project link button */
+.project-link-button {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer
+} 
+
+.project-link-button:hover  {
+    border: 2px solid #16aedb;
+    color: #16aedb; 
+}
+
+.project-decription-wrap p {
+    font-weight: 600;
+}
+    
+
 /* Content styling */
 .post-content p{
     margin-bottom: 24px;
@@ -412,3 +430,6 @@ font-weight: 700;
 line-height: 1.2em;
 text-decoration: solid 1px white;
 }
+
+
+

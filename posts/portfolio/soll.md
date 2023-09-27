@@ -1,6 +1,6 @@
 ---
-title: Soll.uk 
-name: Soll.uk Automotive Paint Store
+title: Dovydas Balionis Soll.uk Ecommerce Project
+name: Soll.uk 
 typeOfWebsite: Automotive Paint Ecommerce Store
 Role: Designer | Developer
 imageUrl: ../images/test3.png

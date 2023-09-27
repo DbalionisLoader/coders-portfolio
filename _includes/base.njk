@@ -1,13 +1,23 @@
 ---
-title: Dovydas B. Portfolio Homepage
+title: Dovydas Balionis Javascript Developer Portfolio
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT3JLW5SV4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XT3JLW5SV4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <meta name="description" content="Dovydas Balionis is a professional JavaScript developer with expertise in modern front-end frameworks React, Node.js, and Boostrap. Check out his portfolio for project samples, skills, and more.">
     <link rel="icon" type="image/svg+xml" href="../images/portfavcon-coder.svg">
     {# Google fonts #}
     {% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap' %}

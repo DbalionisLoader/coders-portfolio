@@ -6,27 +6,27 @@ layout: base.njk
 <div class="container">
 <div class="container back-link mb-5"><a href="/">Go back to homepage</a></div>    
 
-<div class="container d-flex flex-column mb-5">
+<div class="container d-flex flex-column mb-5 project-decription-wrap">
     <h1 class="mb-3">{{ title }}</h1>
     <p>{{ typeOfWebsite }}</p>
     <div class="mt-3">
-    <a href="{{ websiteLink }}" target="_blank" rel="noopener noreferrer" class="button btn nav-contact-lg">View Website</a>
+    <a href="{{ websiteLink }}" target="_blank" rel="noopener noreferrer" class="button btn project-link-button">View Website</a>
     </div>
 </div>
 <div class="container">
        <img class="img-fluid" src="{{ mainImageUrl }}" alt="{{ imageAlt }}"> 
 </div>
-<div class="container pt-3 mt-5">
+<div class="container pt-4 pb-3 mt-5 border-bottom border-top">
     <div class="row">
-        <div class="col-4">
+        <div class="col-3 col-md-4 pe-2">
             <h3>Role</h3>
             <p>{{Role}}</p>
         </div>
-         <div class="col-4">
+         <div class="col-3 col-md-4 pe-3">
             <h3>Date</h3>
             <p>{{ date | postDate }}</p>
          </div>
-          <div class="col-4"><h3>Tools</h3>
+          <div class="col-6 col-md-4"><h3>Tools</h3>
            <p>
             {% for tag in tech %}
                 <span>{{ tag }}</span>
@@ -44,7 +44,7 @@ layout: base.njk
 </div>
 {# Next/Preview post navigation #}
 <div class="container mb-5 d-flex justify-content-between"> 
-    <div class="back-link">
+    <div class="back-link pe-3">
         {% if previousPost %}Previous Project: <a  href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
     </div> 
     <div class="back-link">

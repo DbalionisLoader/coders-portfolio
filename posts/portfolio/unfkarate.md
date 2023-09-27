@@ -1,6 +1,6 @@
 ---
-title: UoL Karate Club Website - Ongoing
-name:  UoL Karate Club Websites
+title: Dovydas Balionis Soll.uk UoL Karate Club Website Project
+name:  UoL Karate Club Website - Ongoing
 typeOfWebsite: University Sports Club Website
 Role: Designer | Developer
 imageUrl: ../images/uofkarateclub-thumbnail.png
