@@ -155,8 +155,12 @@ line-height: 1.2em;
 #porfolio-header{
     font-size: 28px;
 }
+/* Porfolio card start */
 
 .project-box{
+     /* Makes it a flex container to anchor "read more" to bottom of card*/
+    display: flex;        
+    flex-direction: column; 
     width: auto;
     min-width: 420px;   
     max-width: 445px; 
@@ -165,6 +169,8 @@ line-height: 1.2em;
     justify-content: center; 
     flex: 1;
     padding-bottom: 8px;
+  
+   
 }
 
 @media (max-width: 500px) {
@@ -173,6 +179,8 @@ line-height: 1.2em;
         min-width: 300px;   
     }
  } 
+
+
 .project-box img{
    width: 100%;
    height: auto;
@@ -200,6 +208,7 @@ line-height: 1.2em;
 }
 
 .box-text-wrapper {
+    flex-grow: 1; /* To fill all space inside card  */
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
@@ -226,11 +235,16 @@ line-height: 1.2em;
     padding: 0px 8px 8px 16px;
     color: #1293BA;
     font-weight: 500;
+ 
 }
 
 .readmore-link:hover{
    text-decoration: underline;
 }
+
+
+
+/*====== Porfolio card end ======*/
 
 .js-project-box {
     background-color: #323238;

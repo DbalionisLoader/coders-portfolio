@@ -51,12 +51,12 @@ eleventyImport:
                   {% endfor %}
               </div>
               <div class="box-text-wrapper">
-                <a href="helloworld.html" aria-label="Link a view a hello world webpage">
+                <a href="{{ post.data.link }}" aria-label="Link a view a hello world webpage">
                   <h2>{{ post.data.title }}</h2>
                  
                   <p>{{ post.data.shortDesc }}</p>
               </div>
-              <div class="link-opacity-10-hover readmore-link hover:underline">Read more </div>
+              <div class="link-opacity-10-hover readmore-link hover:underline ">Read more </div>
               </a> 
         </div>
         {%- endfor -%}
@@ -71,7 +71,7 @@ eleventyImport:
       <div class="project-wrapper card-wrapper-mobile mt-4">
           {%- for post in collections.examplePosts | reverse -%}
             <div class="project-box js-project-box">
-            <a href="{{ post.data.link }}">
+            <a href="{{ post.data.link }}" target="_blank" rel="noreferrer noopener">
               <img class="img-fluid" src="{{ post.data.imageUrl }}"  alt="{{ post.imageAlt }}">
             </a>
               <div class="tag-line-wrapper">
@@ -86,7 +86,7 @@ eleventyImport:
                  
                   <p>{{ post.content | safe }}</p>
               </div>
-              <a href="{{ post.data.link }}" aria-label="{{ post.data.linkDesc }}">
+              <a href="{{ post.data.link }}" target="_blank" rel="noreferrer noopener" aria-label="{{ post.data.linkDesc }}">
               <div class="link-opacity-10-hover readmore-link hover:underline">View me on CodePen</div>
               </a> 
         </div>
