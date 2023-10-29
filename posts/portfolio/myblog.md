@@ -3,7 +3,7 @@ title: Dovydas Balionis Developer Blog
 name:  My Dev Blog
 typeOfWebsite: Personal Blog
 Role: Designer | Developer
-imageUrl: ../images/blog-thump-shadow-webp.webp
+imageUrl: ../images/blog-mock-large-shadow-webp.webp
 imageAlt: A picture of my blog homepage 
 mainImageUrl:  ../images/blog-mock-large-shadow-webp.webp
 link: /myblog

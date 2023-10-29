@@ -422,10 +422,18 @@ footer h3 {
   }
     
 
+/* ====== POST PAGE ====== */  
+
 /* Content styling */
 .post-content p{
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
+
+.post-content h2{
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
 
 
 
