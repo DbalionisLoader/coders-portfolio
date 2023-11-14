@@ -1,0 +1,2 @@
+[build]
+  ignore = ["node_modules/hamljs/test/fixtures/*"]
