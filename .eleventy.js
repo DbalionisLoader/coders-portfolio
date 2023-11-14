@@ -10,6 +10,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("images/png");
     eleventyConfig.addPassthroughCopy("site.json");
+    eleventyConfig.addPassthroughCopy("js/main.js");
+    eleventyConfig.addPassthroughCopy("node_modules");
     /* Custom Filters */
     eleventyConfig.addCollection("examplePosts", function(collection) {
         return collection.getFilteredByGlob("./posts/examples/*.md");

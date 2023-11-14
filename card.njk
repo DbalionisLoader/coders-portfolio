@@ -1,0 +1,44 @@
+---
+title: Dovydas Balionis Full Stack Javascript Developer Portfolio
+layout: base.njk
+---
+
+
+<div class="card-body position-relative">
+    <canvas class="w-100 h-100 position-absolute top-0 left-0" id="my-canvas"></canvas>
+    <div class="snow-container container pb-5 mb-5 d-flex flex-column justify-content-center align-items-center">
+        <img class="img-fluid flower" src="../images/—Pngtree—peony flower vector illustration hd_4362694.png" alt="">
+        <h1 class="mb-3 mt-4">Su Gimtadieniu Mama!</h1>  
+        <p>Linkiu tau gimtadienio ir gražaus AUDI</p>
+        <img class="img-fluid flower mt-4" src="../images/audi.png" alt="">
+        <h2 class="mt-5">Linkėjimai nuo Dovydo!</h2>
+    </div> 
+</div>
+
+{# <div class="container-fluid snow-container">
+
+
+    <div class="container"></div>  
+  
+</div> #}
+
+<script  src="../node_modules/confetti-js/dist/index.min.js"></script> 
+    <script  src="../js/main.js"></script>
+    <script>
+    // Your JavaScript code using ConfettiGenerator
+    console.log("main.js connected");
+  
+
+    // Make sure ConfettiGenerator is defined
+    if (typeof ConfettiGenerator !== 'undefined') {
+      var confettiElement = document.getElementById('my-canvas');
+      var confettiSettings = { target: confettiElement };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    } else {
+      console.error("ConfettiGenerator is not defined. Check if the library is loaded correctly.");
+    }
+  </script> 
+
+
+</html>

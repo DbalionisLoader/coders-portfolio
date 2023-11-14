@@ -451,5 +451,25 @@ line-height: 1.2em;
 text-decoration: solid 1px white;
 }
 
+.card-body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars due to snowfall */
+   
+}
 
+.snow-container h1,p{
+    color: white;
+}
+.snow-container h1{
+    font-size: 36px;
+    font-weight: 700;
+}
 
+.snow-container p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.flower{
+    max-width: 300px;
+}
