@@ -1,6 +1,6 @@
 [build]
 command = "eleventy"
 publish = "_site"
-
+ignore = ["node_modules/hamljs/test/**"]
 [dev]
 command = "eleventy --serve"
