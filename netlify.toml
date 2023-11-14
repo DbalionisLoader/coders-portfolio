@@ -1,3 +1,6 @@
 [build]
-  functions = "netlify/functions"
-  ignore = ["node_modules/hamljs/test/fixtures/*"]
+command = "eleventy"
+publish = "_site"
+
+[dev]
+command = "eleventy --serve"

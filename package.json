@@ -11,6 +11,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "eleventy-google-fonts": "^0.1.0",
+    "netlify-cli": "^17.3.1",
     "parcel": "^2.9.3"
   },
   "scripts": {
