@@ -6,11 +6,11 @@ eleventyImport:
     <div class="hero-wrapper">
      
       <div class="hero-intro pe-5">
-        <h1>Hi, I'm Dovydas <br> A Full  Stack <br> Web Developer</h1>
-        <p class="hero-desc pt-4 pb-1">Welcome to my portfolio 1.2! <br> I'm a web developer based in West Yorkshire, UK. I began my career on WordPress and steadily growing my skillset to become a full-stack developer. <br> 
-        </p>
-        <p class="hero-desc pb-4"> Whether it's a single-page site or a complex e-commerce platform, I am fully prepared to tackle any project that comes my way.
-        </p>
+        <h1>Hi, <br> I'm Freelance Web Developer<span class="header-accent">.</span> </h1>
+        <hr class="mt-5 mb-5 p-0">
+        <h2 class="hero-desc mb-5"> I'm David Balionis, a <strong> freelance web developer</strong> with over 4 years experience based in <strong> West Yorkshire.</strong>
+        </h2>
+     
         <div class="container p-0 d-flex align-items-center justify-content-start m-0">
           <a href="https://github.com/DbalionisLoader" target="_blank" rel="noreferrer noopener">
             <i class="bi bi-github pe-4 icon-colour" alt="github icon to my github page"></i>
@@ -27,13 +27,20 @@ eleventyImport:
         <img class="hero-image-main image-fluid" src="../images/HeroImagetwo-hq2-trim-webp.webp" alt="Image a 3 window screenshot stack of a soll.uk website ,figma editor and vscode editor">
       </div>    
     </div>
+
+  <section class="service-section">
+    <h2>How can I help<span class="header-accent"> ?</span></h2>
+    <hr>
+    <p>I’m experienced in a wide range of skills that make me the perfect choice for your development partner.</p>
+    <p>If you’re looking for full-service support I can take your project from concept through to delivery and beyond. I’ll work with you to make sure you get fantastic results at every step and help you with ongoing support as needed.</p>
+  </section>  
     {# flex-xl-row flex-column #}
   <section class="container-fluid porfolio-wrapper px-2 px-lg-3">
     <div id="porfolio-header" class="d-flex flex-column  justify-content-start">
       {# Portfolio svg - need new one #}
      {#  <div> <img src = "../images/JamProgram3.svg" style="height: 140px"  alt="My Happy SVG"/></div> #}
       <div class="d-flex pt-3 portf-header">
-      <h1>My Portfolio <span><i class="bi  bi-file-earmark-code-fill"></i></span></h1>
+      <h2>My Portfolio <span><i class="bi  bi-file-earmark-code-fill"></i></span></h2>
       </div>
       
     </div>
@@ -62,38 +69,7 @@ eleventyImport:
         {%- endfor -%}
       </div> 
       </section>
-      <article class="container-fluid jsArticle-wrapper mt-5 px-2 px-lg-3">
-      <div class="portf-header text-start px-2">
-      <h1>My Sandbox <span><i class="fa-brands fa-js"></i></span></h1> 
       
-      <p>A collection of coding excercises showcasing my JS and codings skills</p>
-      </div>
-      <div class="project-wrapper card-wrapper-mobile mt-4">
-          {%- for post in collections.examplePosts | reverse -%}
-            <div class="project-box js-project-box">
-            <a href="{{ post.data.link }}" target="_blank" rel="noreferrer noopener">
-              <img class="img-fluid" src="{{ post.data.imageUrl }}"  alt="{{ post.imageAlt }}">
-            </a>
-              <div class="tag-line-wrapper">
-                  {# tag in local var, post.data.tech is a array #}
-                    {% for tag in post.data.tech %}
-               <div class="tag">{{ tag }}</div>
-                  {% endfor %}
-              </div>
-              <div class="box-text-wrapper box-text-wrapper-white ">
-                
-                  <h2>{{ post.data.title }}</h2>
-                 
-                  <p>{{ post.content | safe }}</p>
-              </div>
-              <a href="{{ post.data.link }}" target="_blank" rel="noreferrer noopener" aria-label="{{ post.data.linkDesc }}">
-              <div class="link-opacity-10-hover readmore-link hover:underline">View me on CodePen</div>
-              </a> 
-        </div>
-        {%- endfor -%}
-      </div>
-    
-      </article>
         <div id="contact-form" class="container p-4 contact-wrapper">
          <div id="contact-header" class="text-center contact-header">
            <h2>Contact Me</h2>
