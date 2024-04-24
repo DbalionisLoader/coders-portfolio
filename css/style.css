@@ -1,3 +1,7 @@
+:root {
+    --accent-color: #16aedb;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -32,7 +36,7 @@ body{
 }
 
 .icon-colour{
-    color:#16aedb;
+    color:var(--accent-color);
     font-size: 50px;
 }
 
@@ -61,7 +65,7 @@ body{
 }
 
 .navbar-nav a:hover {
-    color: #16aedb; 
+    color: var(--accent-color); 
 }
 
 li{
@@ -77,11 +81,11 @@ li{
 
 .nav-contact-lg:hover  {
     border: 2px solid #16aedb;
-    color: #16aedb; 
+    color: var(--accent-color); 
    
 } 
  
-/* HERO SECTION - STAR HERE */
+/* HERO SECTION - START HERE */
 
 .hero-wrapper{
     display: flex;
@@ -133,9 +137,72 @@ strong{
 
 span.header-accent{
     /*color: #c62b52;*/
-    color: #16aedb;
+    color: var(--accent-color);
     
 }
+
+/*===== Service - START HERE =====*/
+
+.service-section{
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: 64px;
+}
+
+@media (max-width: 960px) {
+    .service-section{
+        padding: 32px;
+    }
+    .service-image-col-wrap{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-col-wrap,.service-image-col-wrap{
+        margin-top: 24px;
+    }
+}
+
+
+
+
+.card-row-wrap{
+  padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+
+
+
+
+.service-card-wrap{
+    background-color: #0d0d0d;
+    border: 1px solid #323238;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    box-shadow: none;
+    cursor: default;
+}
+
+
+.service-card-wrap:hover{
+    border: 1px solid var(--accent-color);
+    transform: translateY(-12px); /* Adjust card hover height here */
+    box-shadow: 0 2px 4px rgba(22, 173, 219, 0.281);  /* Adjust card shadow size and color here */
+}
+
+h3.service-card-heading{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+p.service-card-text{
+    color: #69696b;
+}
+
+/*===== Service - END HERE =====*/
 
 
 /*===== Flex porfolio boxes =====*/
@@ -154,7 +221,7 @@ line-height: 1.2em;
     margin-bottom: 180px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
     
     .porfolio-wrapper {
         margin-bottom: 40px;
@@ -337,7 +404,7 @@ line-height: 1.2em;
   
   /* Contact Button */
   button[type="submit"] {
-    background-color: #16adda;
+    background-color: var(--accent-color);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -408,7 +475,7 @@ footer h3 {
 /* Portfolio Case Study */
 
 .back-link a{
-    color: #16adda;
+    color: var(--accent-color);
 }
 
 .back-link a:hover{
@@ -424,8 +491,8 @@ footer h3 {
 } 
 
 .project-link-button:hover  {
-    border: 2px solid #16aedb;
-    color: #16aedb; 
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color); 
 }
 
 .project-decription-wrap p {
