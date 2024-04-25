@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("js/main.js");
     /*Allow redirect file to _site */
     eleventyConfig.addPassthroughCopy("_redirects");
+    eleventyConfig.addPassthroughCopy("maintenance2.html");
     /* Custom Filters */
     eleventyConfig.addCollection("examplePosts", function(collection) {
         return collection.getFilteredByGlob("./posts/examples/*.md");
