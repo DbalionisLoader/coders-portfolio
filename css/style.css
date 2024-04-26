@@ -149,6 +149,19 @@ span.header-accent{
     padding: 64px;
 }
 
+.service-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+@media (max-width: 1200px) {
+    .service-image-col-wrap{
+        margin-top: 24px;
+    }
+}
+
 @media (max-width: 960px) {
     .service-section{
         padding: 32px;
@@ -163,6 +176,7 @@ span.header-accent{
         margin-top: 24px;
     }
 }
+
 
 
 
