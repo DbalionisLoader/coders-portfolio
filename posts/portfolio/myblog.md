@@ -1,6 +1,6 @@
 ---
-title: Dovydas Balionis Developer Blog 
-name:  My Dev Blog
+title: Developer Blog 
+name:  My Developer Blog
 typeOfWebsite: Personal Blog
 Role: Designer | Developer
 imageUrl: ../images/blog-mock-large-shadow-webp.webp
@@ -16,6 +16,7 @@ tech:
 - 11ty
 - Bootstrap
 - Nunjucks
+- Netlify
 - Git + Github
 shortDesc:  My first 11ty site is a personal developer blog. The goal of the blog is to share solutions and code snippets for challenging coding problems I found difficult or interesting. It's also great for documentation practice!
 ---

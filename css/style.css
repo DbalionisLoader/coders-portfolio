@@ -214,6 +214,14 @@ h3.service-card-heading{
 
 p.service-card-text{
     color: #69696b;
+    white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+    p.service-card-text{
+        white-space: normal;
+    }
+    
 }
 
 /*===== Service - END HERE =====*/
@@ -535,8 +543,10 @@ footer h3 {
     font-weight: 700;
 }
 
-
-
+.blog-nav-arrow:hover .bi-caret-left-fill path,
+.blog-nav-arrow:hover .bi-caret-right-fill path {
+    fill: var(--accent-color); /* Change to the desired color on hover */
+  }
 
 
 /* ====== About me page ====== */

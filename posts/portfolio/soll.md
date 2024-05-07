@@ -1,5 +1,5 @@
 ---
-title: Dovydas Balionis Soll.uk Ecommerce Project
+title: Soll.uk Wordpress Ecommerce Website
 name: Soll.uk 
 typeOfWebsite: Automotive Paint Ecommerce Store
 Role: Designer | Developer
@@ -21,17 +21,15 @@ shortDesc:  My first full website project – a 600+ product automotive paint Wo
 
 <p>My first full website project was a 600+ product automotive paint ecommerce website for a local business in Leeds. This project was designed using Adobe XD and implemented through the WordPress CMS. To handle the products, I integrated the WooCommerce plugin. For visual appeal and functionality, I utilized the Elementor and Crocoblock WordPress plugins.</p>
 
-## Responsive desings
+## Responsive Design
 
 <p>The client wanted a bespoke website design. So, I quickly learned how to use Adobe XD software and started creating mockups for the entire website. I drew inspiration from existing automotive parts stores such as Euro Car Parts and Autodoc. I ensured all website pages were responsive for both tablets and mobile phones. However, I encountered a few issues making some page elements responsive. For example, the store filters were not responsive due to Crocoblock's lack of support. I resolved the issue by creating an off-canvas menu with the filters for tablet and mobile views only. This approach, however, impacted performance since I duplicated the filters.</p>
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-<div style="flex: 1; text-align: left; margin-right: 10px;">
-   <img src="..\images\soll-mock-large-mobile-2.webp" alt="Soll.uk desktop filters screenshot" style="max-width: 100%; height: auto;">    
-   <i>Devoted extra time to design and develop soll.uk's mobile version, ensuring a seamless shopping experience for mobile users.</i> 
-</div>
-
-
+   <div style="flex: 1; text-align: left; margin-right: 10px;">
+      <img src="..\images\soll-mock-large-mobile-2.webp" alt="Soll.uk desktop filters screenshot" style="max-width: 100%; height: auto;">    
+      <i class="text-secondary">Devoted extra time to design and develop soll.uk's mobile version, ensuring a seamless shopping experience for mobile users.</i> 
+   </div>
 </div>
 
 
@@ -47,7 +45,7 @@ shortDesc:  My first full website project – a 600+ product automotive paint Wo
 <div style="text-align: left; margin-right: 10px; margin-bottom: 24px">
    <img src="../images/soll-mock-large-checkout-1.webp" alt="Soll.uk desktop filters screenshot" style="max-width: 100%; height: auto;">
    <br>
-   <i>Enhanced the default WooCommerce checkout with custom CSS for a unique, customized appearance.</i>   
+   <i class="text-secondary">Enhanced the default WooCommerce checkout with custom CSS for a unique, customized appearance.</i>   
 </div>
 
 
@@ -61,7 +59,7 @@ shortDesc:  My first full website project – a 600+ product automotive paint Wo
 <div style="text-align: left; margin-right: 10px; margin-bottom: 24px">
    <img src="../images/soll-mock-large-double-desk-1.webp" alt="Soll.uk desktop filters screenshot" style="max-width: 100%; height: auto;">
    <br>
-   <i>The 1-hour feature delivery - product variations feature using custom PHP. </i>   
+   <i class="text-secondary">The 1-hour feature delivery - product variations feature using custom PHP. </i>   
 </div>
 
 

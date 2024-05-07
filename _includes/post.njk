@@ -45,10 +45,32 @@ layout: base.njk
 {# Next/Preview post navigation #}
 <div class="container mb-5 d-flex justify-content-between"> 
     <div class="back-link pe-3">
-        {% if previousPost %}Previous Project: <a  href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+        {% if previousPost %}
+        <div class="d-flex">
+         <div class="prev-arrow">  
+            <a class="blog-nav-arrow" href="{{ previousPost.url }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" class="bi bi-caret-left-fill" viewBox="0 0 16 16"><path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg></a> 
+         </div> 
+         <div class="blog-link-prev">
+            <span>Previous Project:</span> <a  href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+         </div>
+        </div>
+        {% endif %}
     </div> 
     <div class="back-link">
-         {% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+        {% if nextPost %}
+        <div class="d-flex">
+          <div class="blog-link-next">
+            <span>Next Project: </span><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </div> 
+          <div class="next-arrow">
+            <a class="blog-nav-arrow" href="{{ nextPost.url }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/> </a>
+            </svg>
+           </div>  
+        </div>
+        {% endif %}
     </div> 
  </div> 
 </div>
