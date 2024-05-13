@@ -1,6 +1,6 @@
 ---
 title: Soll.uk 2.0 Custom Wordpress Theme
-name: Soll.uk
+name: Soll.uk update - Ongoing
 typeOfWebsite: Automotive Paint Ecommerce Store
 Role: Designer | Developer
 imageUrl: ../images/soll2-sm-wp.webp
