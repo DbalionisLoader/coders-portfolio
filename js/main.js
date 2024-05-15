@@ -22,7 +22,7 @@ function defaultease(x){
         - Uses duration to calculate the rate of change on smooth scroll animation    
 */
 const lenis = new Lenis({
-    duration: 1,
+    duration: 1.4,
     easing: defaultease,
     smooth: true,
 });
