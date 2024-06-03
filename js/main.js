@@ -27,11 +27,11 @@ const lenis = new Lenis({
     smooth: true,
 });
 
-//Testing output to console
+/*Testing output to console
 lenis.on('scroll', (e) => {
     console.log(e)
   })
-  
+*/  
   function raf(time) {
     lenis.raf(time)
     requestAnimationFrame(raf)
