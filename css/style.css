@@ -585,25 +585,43 @@ line-height: 1.2em;
 text-decoration: solid 1px white;
 }
 
-.card-body {
-    margin: 0;
-    overflow: hidden; /* Prevent scrollbars due to snowfall */
-   
+.pill-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} 
+
+.skill-tag-pill{
+    background-color: #393a3a;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;  
 }
 
-.snow-container h1,p{
-    color: white;
-}
-.snow-container h1{
-    font-size: 36px;
-    font-weight: 700;
+.skill-tag-pill:hover{
+    background-color: #16aedb;
 }
 
-.snow-container p{
-    font-size: 20px;
-    font-weight: 500;
+.service-header {
+    font-size: 18px; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between header and pills */
 }
 
-.flower{
-    max-width: 300px;
+/* Technical Skills Section Header */
+.technical-header {
+    font-size: 18px; /* Adjust size as needed */
+    font-weight: bold;
+    margin-top: 20px; /* Space between sections */
+}
+
+/* Visual Break */
+.break {
+    border-top: 2px solid #ccc; /* Change color as needed */
+    margin-top: 20px; /* Space between sections */
+    margin-bottom: 20px; /* Space between sections */
 }
