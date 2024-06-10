@@ -508,20 +508,22 @@ line-height: 1.2em;
     transition: transform 0.3s ease-in-out;
   }
 
-  .button-getintouch:hover {
+.button-getintouch:hover{
    /* Fine adjust button final size*/
     padding-left: 40px;
     padding-right: 10px; 
     background-color: #323238 ;
   }  
 
-  .button-getintouch:hover span { 
+.button-getintouch:hover span { 
     /* Animate the button text left or right */
     transform: translateX(-20px);
   }
 
 
-  .arrow-svg {
+
+
+.arrow-svg {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%) translateY(100%);
@@ -529,11 +531,21 @@ line-height: 1.2em;
     opacity: 0;
   }
 
-  .button-getintouch:hover .arrow-svg {
+.button-getintouch:hover .arrow-svg {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
-    
   }
+  
+/* Add vertical animation on click */
+.button-getintouch:active span { 
+    transition: transform 0.08s ease-in-out;
+    transform:  translateX(-20%) translateY(-3px);
+  }  
+
+.button-getintouch:active .arrow-svg{
+    transition: transform 0.08s ease-in-out;
+    transform:  translateX(-50%) translateY(-3px);
+}
 
 
 
