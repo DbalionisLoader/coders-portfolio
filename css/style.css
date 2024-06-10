@@ -498,7 +498,9 @@ line-height: 1.2em;
     padding: 16px 48px;
     border-radius: 25px;
     overflow: hidden; 
-    transition: padding 0.3s ease-in-out;
+    cursor: pointer;
+    caret-color: transparent; 
+    transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .button-getintouch span {
@@ -506,6 +508,7 @@ line-height: 1.2em;
     left: 5px; /* Fine adjust button text position */
     /* Control the speed the button text speed */
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
   }
 
 .button-getintouch:hover{
@@ -537,16 +540,16 @@ line-height: 1.2em;
   }
   
 /* Add vertical animation on click */
-.button-getintouch:active span { 
+.button-getintouch:active { 
     transition: transform 0.08s ease-in-out;
-    transform:  translateX(-20%) translateY(-3px);
+    transform:  translateY(-3px);
   }  
-
+/*
 .button-getintouch:active .arrow-svg{
     transition: transform 0.08s ease-in-out;
     transform:  translateX(-50%) translateY(-3px);
 }
-
+*/
 
 
 .footer{
