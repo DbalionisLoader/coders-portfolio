@@ -1,5 +1,6 @@
 :root {
     --accent-color: #16aedb;
+    --main-background-color: #1a1a1d;
 }
 /***** Section *****/  
 
@@ -462,6 +463,80 @@ line-height: 1.2em;
     
   /* Contact Button END*/
 
+.contact-me-wrapper{
+    background-color: #020202;  
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+.contact-me-container{
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px){
+    .contact-me-container{
+        display: block;
+    }
+}
+
+.button-getintouch{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    background-color: var(--main-background-color) ;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 25px;
+    overflow: hidden; 
+    transition: padding 0.3s ease-in-out;
+}
+
+.button-getintouch span {
+    position: relative;
+    left: 5px; /* Fine adjust button text position */
+    /* Control the speed the button text speed */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button-getintouch:hover {
+   /* Fine adjust button final size*/
+    padding-left: 40px;
+    padding-right: 10px; 
+    background-color: #323238 ;
+  }  
+
+  .button-getintouch:hover span { 
+    /* Animate the button text left or right */
+    transform: translateX(-20px);
+  }
+
+
+  .arrow-svg {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  .button-getintouch:hover .arrow-svg {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    
+  }
+
+
+
 .footer{
     background-color: #323238;    
     flex: 0 0 auto;
@@ -607,21 +682,21 @@ text-decoration: solid 1px white;
 }
 
 .service-header {
-    font-size: 18px; /* Adjust size as needed */
+    font-size: 18px; 
     font-weight: bold;
-    margin-bottom: 10px; /* Space between header and pills */
+    margin-bottom: 10px;
 }
 
 /* Technical Skills Section Header */
 .technical-header {
-    font-size: 18px; /* Adjust size as needed */
+    font-size: 18px; 
     font-weight: bold;
-    margin-top: 20px; /* Space between sections */
+    margin-top: 20px; 
 }
 
 /* Visual Break */
 .break {
-    border-top: 2px solid #ccc; /* Change color as needed */
-    margin-top: 20px; /* Space between sections */
-    margin-bottom: 20px; /* Space between sections */
+    border-top: 2px solid #ccc; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
