@@ -24,7 +24,7 @@
 
 
 
-/***** Sections 
+/***** Sections *****/  
 
 
 html.lenis, html.lenis body {
@@ -46,7 +46,7 @@ html.lenis, html.lenis body {
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
-*****/  
+
 
 /***** End Section *****/
 body{
