@@ -2,7 +2,29 @@
     --accent-color: #16aedb;
     --main-background-color: #1a1a1d;
 }
-/***** Section *****/  
+
+
+/*****Bootstrap overrides *****/  
+
+.offcanvas{
+	--bs-offcanvas-zindex: 1045;
+	--bs-offcanvas-width: 800px;
+	--bs-offcanvas-height: 30vh;
+	--bs-offcanvas-padding-x: 1rem;
+	--bs-offcanvas-padding-y: 1rem;
+	--bs-offcanvas-color: var(--bs-body-color);
+	--bs-offcanvas-bg: var(--bs-body-bg);
+	--bs-offcanvas-border-width: var(--bs-border-width);
+	--bs-offcanvas-border-color: var(--bs-border-color-translucent);
+	--bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+	--bs-offcanvas-transition: transform 0.3s ease-in-out;
+	--bs-offcanvas-title-line-height: 1.5;
+}
+
+
+
+
+/***** Sections *****/  
 
 
 html.lenis, html.lenis body {
@@ -434,18 +456,7 @@ line-height: 1.2em;
     margin-bottom: 20px;
   }
   
-  label {
-    display: block;
-    font-weight: bold;
-  }
   
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 0;
-  }
   
   /* Contact Button */
   button[type="submit"] {
@@ -500,14 +511,14 @@ line-height: 1.2em;
     overflow: hidden; 
     cursor: pointer;
     caret-color: transparent; 
-    transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: padding 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .button-getintouch span {
     position: relative;
     left: 5px; /* Fine adjust button text position */
     /* Control the speed the button text speed */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
   }
 
@@ -530,7 +541,7 @@ line-height: 1.2em;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%) translateY(100%);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     opacity: 0;
   }
 

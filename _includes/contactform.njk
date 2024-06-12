@@ -1,21 +1,36 @@
-<div class="offcanvas offcanvas-end " data-bs-theme="dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-end" data-bs-theme="dark" tabindex="-1" id="offcanvasExample" aria-labelledby="Contact the developer form">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <h5 class="offcanvas-title" id="notitle"></h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      <h1>Send Me a Message</h1>
     </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+    <div class="form-wrapper">
+      <form action="">
+        <div class="mb-3">
+          <label for="firstnamefield" class="form-label">First name*</label>
+            <input type="text" class="form-control" id="firstNameInput1" placeholder="name@example.com">
+        </div>
+         <div class="mb-3">
+          <label for="surnamenamefield" class="form-label">Last name*</label>
+            <input type="text" class="form-control " id="firstNameInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="emailaddressfield" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        
+        
+        <div class="mb-3">
+           <label for="messagefield" class="form-label">Your message</label>
+            <textarea class="form-control" id="messagefieldTextarea1" rows="3"
+            placeholder="How can I help you?">
+              
+            </textarea>
+        </div>
+      </form>
     </div>
   </div>
 </div>
