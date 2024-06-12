@@ -24,7 +24,7 @@
 
 
 
-/***** Sections *****/  
+/***** Sections 
 
 
 html.lenis, html.lenis body {
@@ -46,10 +46,8 @@ html.lenis, html.lenis body {
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
+*****/  
 
-/*html{
-    scroll-behavior: smooth;
-} */
 /***** End Section *****/
 body{
     min-height: 100vh;
