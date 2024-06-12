@@ -103,6 +103,28 @@ body{
  
 }
 
+@media (max-width: 991px) {
+    
+    
+    .navbar-nav a {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .navbar-nav {
+        padding-top: 96px;
+    }
+
+    .nav-link{
+        padding: 0;
+    }
+    .about-nav-item{
+        padding-bottom: 32px;
+    }
+}
+
+
+
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: aliceblue;
 }
@@ -115,18 +137,6 @@ li{
     font-size: 18px;
 }
 
-.nav-contact-lg  {
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer
-} 
-
-.nav-contact-lg:hover  {
-    border: 2px solid #16aedb;
-    color: var(--accent-color); 
-   
-} 
  
 /* HERO SECTION - START HERE */
 
@@ -281,6 +291,8 @@ line-height: 1.2em;
 .porfolio-wrapper, .jsArticle-wrapper, .footer-wrapper {
     max-width: 1420px ;
 }
+
+
 
 .porfolio-wrapper {
     margin-bottom: 180px;
@@ -512,10 +524,15 @@ line-height: 1.2em;
     transition: padding 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+
+.getintouch-header{
+    background-color: #000000 ;
+}
+
 .button-getintouch span {
     position: relative;
-    left: 5px; /* Fine adjust button text position */
-    /* Control the speed the button text speed */
+    left: 5px; /* Fine adjust button text position 
+    /* Control the speed the button text speed  #16aedb */
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
   }
@@ -560,9 +577,13 @@ line-height: 1.2em;
 }
 */
 
+.footer-wrapper{
+    padding-top: 32px;
+}
+
 
 .footer{
-    background-color: #323238;    
+    background-color: var(--main-background-color);    
     flex: 0 0 auto;
 }
 

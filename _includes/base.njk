@@ -48,23 +48,23 @@ title: Freelance Web Developer | David B.
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-flex align-items-start align-items-lg-center">
             {# Space space out nav links but only for desktop  #}
               <li class="nav-item px-lg-3">
-                <a class="nav-link " href="../index.html#porfolio-header">My Work</a>
+                <a class="nav-link" href="../index.html#porfolio-header">My Work</a>
               </li>
-              <li class="nav-item px-lg-3 ">
+              <li class="nav-item about-nav-item px-lg-3 ">
                 <a class="nav-link " href="/about">About Me</a>
               </li> 
-              <li class="nav-item px-lg-3 ">
-                <a class="nav-link" href="http://dblog.co.uk/" aria-current="page">Blog</a>
-              </li>
-               <li class="nav-item mobile d-block d-lg-none px-lg-3 ">
-                <a class="nav-link" href="../index.html#contact-form" aria-current="page">Contact</a>
-              </li>
-              <li class="d-none d-lg-block"> <a href="../index.html#contact-form"><button class="btn nav-contact-lg nav-item px-0 px-lg-3 ms-lg-3" aria-label="Link to the contact me form">Contact</button> </a></li>
+            <button class="button-getintouch getintouch-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span>Get In Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="arrow-svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+              </svg>
+            </button>
             </ul>
+
           </div>
+      
         </div>
       </nav>
     </header>
@@ -80,7 +80,7 @@ title: Freelance Web Developer | David B.
            <p class='lead'>I would love to help you.</p>
            {% include "contactform.njk" %}
         </div>
-        <div class="">
+        <div class="contact-button-wrapper">
           <button class="button-getintouch" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span>Get in Touch</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="arrow-svg" viewBox="0 0 16 16">
              <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
@@ -91,11 +91,10 @@ title: Freelance Web Developer | David B.
     </div>
     <div class="container footer-wrapper">
     <ul class="nav flex flex-column flex-md-row justify-content-center border-bottom  pb-3 mb-3 ">
-      <li class="nav-item"><a href="../index.html#porfolio-header" class="nav-link link-hover px-2 text-light">My work</a></li>
-      <li class="nav-item"><a href="/about" class="nav-link link-hover px-2 text-light">About me</a></li>
-      <li class="nav-item"><a href="http://dblog.co.uk/" class="nav-link link-hover px-2 text-light">Blog</a></li>
-      <li class="nav-item"><a href="../index.html#contact-form" class="nav-link link-hover px-2 text-light">Contact me</a></li>
-      <li class="nav-item"><a href="/sitemap.xml" class="nav-link link-hover px-2 text-light">Site map</a></li>
+      <li class="nav-item"><a href="../index.html#porfolio-header" class="nav-link link-hover px-2 text-light">My Work</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link link-hover px-2 text-light">About Me</a></li>
+      <li class="nav-item"><a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" class="nav-link link-hover px-2 text-light">Contact Me</a></li>
+      <li class="nav-item"><a href="/sitemap.xml" class="nav-link link-hover px-2 text-light">Site Map</a></li>
     </ul>
     <p class="text-left text-md-center text-white text-light">© David B. All rights reserved</p>
     </div>
