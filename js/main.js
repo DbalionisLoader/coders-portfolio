@@ -38,3 +38,17 @@ lenis.on('scroll', (e) => {
   }
   
   requestAnimationFrame(raf)
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault(); // Prevent form submission
+        event.stopPropagation(); // Stop form from closing offcanvas
+      }
+
+      form.classList.add('was-validated'); // Add Bootstrap validation class for visual feedback
+    }, false);
+  });
