@@ -103,9 +103,13 @@ body{
  
 }
 
+/* Mobile Header - START */
+
 @media (max-width: 991px) {
     
     
+
+
     .navbar-nav a {
         font-size: 36px;
         font-weight: 400;
@@ -113,6 +117,9 @@ body{
 
     .navbar-nav {
         padding-top: 96px;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.25);
+        padding-bottom: 44px;
+    
     }
 
     .nav-link{
@@ -123,7 +130,7 @@ body{
     }
 }
 
-
+/* Mobile Header - END */
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: aliceblue;
@@ -468,7 +475,7 @@ line-height: 1.2em;
   
   
   
-  /* Contact Button */
+/* Submit Button - START */
   button[type="submit"] {
     background-color: var(--accent-color);
     color: white;
@@ -482,8 +489,9 @@ line-height: 1.2em;
     background-color: #45a049;
   }
     
-  /* Contact Button END*/
+/* Submit Button - END */
 
+/* Contact me footer - START */
 .contact-me-wrapper{
     background-color: #020202;  
     padding-top: 32px;
@@ -526,7 +534,7 @@ line-height: 1.2em;
 
 
 .getintouch-header{
-    background-color: #000000 ;
+    background-color: var(--accent-color) ;
 }
 
 .button-getintouch span {
@@ -538,7 +546,7 @@ line-height: 1.2em;
   }
 
 .button-getintouch:hover{
-   /* Fine adjust button final size*/
+   /* Fine adjust button final size - post animation*/
     padding-left: 40px;
     padding-right: 10px; 
     background-color: #323238 ;
@@ -570,13 +578,10 @@ line-height: 1.2em;
     transition: transform 0.08s ease-in-out;
     transform:  translateY(-3px);
   }  
-/*
-.button-getintouch:active .arrow-svg{
-    transition: transform 0.08s ease-in-out;
-    transform:  translateX(-50%) translateY(-3px);
-}
-*/
 
+/* Contact me footer - END */
+
+/* Footer links  - START */
 .footer-wrapper{
     padding-top: 32px;
 }
@@ -585,6 +590,10 @@ line-height: 1.2em;
 .footer{
     background-color: var(--main-background-color);    
     flex: 0 0 auto;
+}
+
+.footer-list-wrap{
+    border-bottom: 1px rgb(255, 255, 255, 0.25) solid;
 }
 
 footer h3 {
@@ -597,6 +606,8 @@ footer h3 {
 .link-hover:hover{
     text-decoration: underline solid 2px white;
 }
+
+/* Footer links  - END */
 
 /* Responsive porfolio section */
 
