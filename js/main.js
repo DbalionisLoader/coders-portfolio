@@ -1,6 +1,3 @@
-console.log('Hello, Eleventy!');
-
-
 //Different smooth scroll functions (x = duration) 
 //For more options visit: https://easings.net/en#
 function easeOutSine(x) {
@@ -12,7 +9,7 @@ function defaultease(x){
 }
 
 
-/*  Init lenis for smooth scrolling     functionality
+/*  smooth scrolling functionality
 
     1. duration:
         - Specifies the duration of the smooth scroll animation 
@@ -27,11 +24,6 @@ const lenis = new Lenis({
     smooth: true,
 });
 
-/*Testing output to console
-lenis.on('scroll', (e) => {
-    console.log(e)
-  })
-*/  
   function raf(time) {
     lenis.raf(time)
     requestAnimationFrame(raf)
