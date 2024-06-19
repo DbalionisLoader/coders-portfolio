@@ -106,6 +106,7 @@ body{
 .icon-colour{
     color:var(--accent-color);
     font-size: 50px;
+    margin-right: 16px;
 }
 
 .icon-colour:hover{
