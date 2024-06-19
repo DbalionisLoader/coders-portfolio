@@ -7,6 +7,7 @@ imageUrl: ../images/uolkc-small-wb.webp
 imageAlt: A screenshot of a Univisity of Liverpool karate club homepage
 mainImageUrl:  ../images/uolkc-main-wb.webp
 link: \unfkarate
+alabel: Read more University of Liverpool karate website project
 websiteLink: https://celadon-selkie-e3f6ba.netlify.app
 date: 2024-01-16
 tech:

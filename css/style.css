@@ -1,5 +1,6 @@
 :root {
-    --accent-color: #16aedb;
+    --accent-color: #0064fd;
+    --accent-color2: #16aedb;
     --main-background-color: #1a1a1d;
 }
 
@@ -294,10 +295,11 @@ span.header-accent{
 h3.service-card-heading{
     color: #fff;
     font-size: 1.25rem;
+    padding-bottom: 8px;
 }
 
 p.service-card-text{
-    color: #69696b;
+    color: #cccccc;
     white-space: pre-line;
 }
 
@@ -428,7 +430,7 @@ line-height: 1.2em;
 }
 .readmore-link{
     padding: 0px 8px 8px 16px;
-    color: #1293BA;
+    color: var(--accent-color);
     font-weight: 500;
  
 }

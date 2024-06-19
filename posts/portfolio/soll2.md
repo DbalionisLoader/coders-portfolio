@@ -7,6 +7,7 @@ imageUrl: ../images/soll2-sm-wp.webp
 imageAlt: A image of a rear end of a sport car with sunset background
 mainImageUrl:  ../images/soll2-lg-wp.webp
 link: /soll2
+alabel: Read more about soll.uk custom theme project
 websiteLink: https://soll.uk/
 date: 2024-05-01
 tech:

@@ -7,6 +7,7 @@ imageUrl: ../images/soll-mock-large-shadow-1.webp
 imageAlt: A screenshot picture of the Soll.uk automotive paint store
 mainImageUrl:  ../images/soll-mock-large-shadow-1.webp
 link: /soll
+alabel: Read more about soll.uk website project
 websiteLink: https://soll.uk/
 date: 2023-02-03
 tech:

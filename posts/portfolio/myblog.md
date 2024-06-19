@@ -7,6 +7,7 @@ imageUrl: ../images/blog-mock-large-shadow-webp.webp
 imageAlt: A picture of my blog homepage 
 mainImageUrl:  ../images/blog-mock-large-shadow-webp.webp
 link: /myblog
+alabel: Read more about my blog project
 websiteLink: https://dblog.co.uk/
 date: 2023-07-05    
 tech:

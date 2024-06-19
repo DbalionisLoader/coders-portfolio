@@ -13,13 +13,13 @@ eleventyImport:
         </h2>
      
         <div class="container p-0 d-flex align-items-center justify-content-start m-0">
-          <a href="https://github.com/DbalionisLoader" target="_blank" rel="noreferrer noopener">
+          <a href="https://github.com/DbalionisLoader" target="_blank" aria-label="Visit my GitHub page" rel="noreferrer noopener">
             <i class="bi bi-github pe-4 icon-colour" alt="github icon to my github page"></i>
           </a>
-          <a href="https://www.linkedin.com/in/dovydas-balionis-7ab725174/" target="_blank" rel="noreferrer noopener">
+          <a href="https://www.linkedin.com/in/dovydas-balionis-7ab725174/" target="_blank" aria-label="Visit my Linkedin profile"  rel="noreferrer noopener">
             <i class="bi bi-linkedin pe-4 icon-colour"  alt="linkedin icon to my linked in profile"></i>
           </a>
-           <a href="https://codepen.io/dbalionis" target="_blank" rel="noreferrer noopener">
+           <a href="https://codepen.io/dbalionis" target="_blank" aria-label="Visit my Codepen portfolio"  rel="noreferrer noopener">
             <i class="fa-brands fa-codepen icon-colour"  alt="codepen icon to my codepen profile"></i>
           </a>
         </div>
@@ -92,7 +92,7 @@ eleventyImport:
       <div class="project-wrapper card-wrapper-mobile mt-4">   
         {%- for post in collections.posts | reverse -%}
             <div class="project-box">
-            <a href="{{ post.data.link }}">
+            <a href="{{ post.data.link }}" aria-label="{{ post.data.alabel}}">
               <img class="img-fluid" src="{{ post.data.imageUrl }}" loading="lazy"  width="445" height="312" alt="{{ post.imageAlt }}">
             </a>
               <div class="tag-line-wrapper">
