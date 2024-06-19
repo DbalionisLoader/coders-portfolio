@@ -73,7 +73,7 @@ eleventyImport:
         </div> <!-- Card row 2 END-->
       </div> 
       <div class="col-12 col-xl-6 d-flex align-content-center service-image-col-wrap ps-0 ps-xl-5"> 
-        <img class="service-image mx-auto d-block" src="../images/web-mock-graphic-700w.png" alt="">
+        <img class="service-image mx-auto d-block" src="../images/web-mock-graphic-700w.png" width="600" height="600" alt="">
       </div>        
 
     </div>
@@ -93,7 +93,7 @@ eleventyImport:
         {%- for post in collections.posts | reverse -%}
             <div class="project-box">
             <a href="{{ post.data.link }}">
-              <img class="img-fluid" src="{{ post.data.imageUrl }}" loading="lazy" alt="{{ post.imageAlt }}">
+              <img class="img-fluid" src="{{ post.data.imageUrl }}" loading="lazy"  width="445" height="312" alt="{{ post.imageAlt }}">
             </a>
               <div class="tag-line-wrapper">
                   {# tag in local var, post.data.tech is a array #}
