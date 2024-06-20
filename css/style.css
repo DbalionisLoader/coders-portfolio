@@ -24,7 +24,7 @@
 
 .form-label {
     margin-bottom: 0.8rem;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .form-control {
@@ -213,10 +213,10 @@ strong{
     overflow: hidden;
 }
 
-.hero-image::before {
+.hero-image::before { /* Fixed the image cls issue reserving the correct aspect ratio space */
     content: "";
     display: block;
-    padding-top: 58.7%; /* (830 / 1414) * 100% = 58.7% */
+    padding-top: 58.7%; /* IMPORT BIT - calculate the aspect ratio of image and set it padding-top percentage - (830 / 1414) * 100% = 58.7% */
 }
 
 .hero-intro img{
@@ -514,17 +514,33 @@ line-height: 1.2em;
   
 /* Submit Button - START */
   button[type="submit"] {
-    background-color: var(--accent-color);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    font-size: 20px;
+    background-color: #323238 ;
     border: none;
-    padding: 10px 20px;
-    border-radius: 0;
+    padding: 16px 48px;
+    border-radius: 25px;
+    overflow: hidden; 
     cursor: pointer;
+    caret-color: transparent; 
+    border: 1.5px solid  #323238;
+    transition: background-color 0.2s ease-in-out;
   }
   
   button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: var(--accent-color);
+    border: 1.5px solid #323238;
   }
+
+ 
+  button[type="submit"]:active {
+    border: 1.5px solid var(--accent-color) ;
+  }
+
     
 /* Submit Button - END */
 
