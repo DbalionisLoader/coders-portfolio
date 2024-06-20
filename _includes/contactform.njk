@@ -5,8 +5,8 @@
   </div>
   <div class="offcanvas-body">
     <div>
-      <h1 class="mb-2">Get in Touch</h1>
-      <p>Need help fixing your website or building a new one? Contact me, and I'll get back to you within two working day.</p>
+      <h1 class="mb-4">Get in Touch</h1>
+      <p class="mb-4">Need help fixing your website or building a new one? <br> Fill in the short form, and I'll get back to you with a free quote within two working days.</p>
     </div>
     <hr>
     <div class="form-wrapper">
@@ -15,21 +15,26 @@
         <div class="mb-5 mt-5">
           <label for="firstnamefield" class="form-label">First name *</label>
             <input type="text" class="form-control" id="firstNameInput1" name="first-name" placeholder="John" required>
+             <div class="invalid-feedback"> Please fill required field</div>
+
         </div>
          <div class="mb-5">
           <label for="surnamenamefield" class="form-label">Last name *</label>
             <input type="text" class="form-control " id="lastNameInput1" name="last-name"  placeholder="Smith" required>
+             <div class="invalid-feedback"> Please fill required field</div>
         </div>
         <div class="mb-5">
           <label for="emailaddressfield" class="form-label">Email address *</label>
             <input type="email" class="form-control" id="emailInput1" name="email-address" placeholder="Johnsmith@example.com" required>
+             <div class="invalid-feedback"> Please fill required field</div>
         </div>
         
         
         <div class="mb-5">
-           <label for="messagefield" class="form-label">How can I help you?</label>
-            <textarea class="form-control" placeholder="Your message (optional)" id="messagefieldTextarea1"  name="message" rows="3">
+           <label for="messagefield" class="form-label">What can I do for you? * </label>
+            <textarea class="form-control" placeholder="Your message goes here ;)" id="messagefieldTextarea1"  name="message" rows="3" required>
             </textarea>
+            <div class="invalid-feedback"> Please fill required field</div>
         </div>
         <div class="button-wrap">
             <button type="submit">Send</button>
