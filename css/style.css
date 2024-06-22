@@ -129,6 +129,28 @@ body{
  
 }
 
+/* Link underline animation - width = link container */
+.underline {
+    border: 2px solid transparent;
+    position: relative;
+    text-decoration: none;
+  }
+  .underline::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .underline:hover::after {
+    width: 100%;
+    
+  }
+
 /* Mobile Header - START */
 
 @media (max-width: 991px) {
@@ -152,7 +174,7 @@ body{
         padding: 0;
     }
     .about-nav-item{
-        padding-bottom: 32px;
+        margin-bottom: 32px;
     }
 }
 
@@ -360,7 +382,7 @@ line-height: 1.2em;
     justify-content: start; 
 }
 
-#porfolio-header{
+#porfolio{
     font-size: 28px;
 }
 /* Porfolio card start */
