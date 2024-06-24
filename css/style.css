@@ -833,3 +833,10 @@ text-decoration: solid 1px white;
     margin-top: 20px; 
     margin-bottom: 20px; 
 }
+
+/* Form thank you message - START */
+.message-thankyou{
+    background-color: #020202;
+    padding: 36px;
+    border-radius: 20px;
+}
