@@ -599,10 +599,21 @@ line-height: 1.2em;
     font-size: 64px;
 }
 
-@media (max-width: 576px){
+
+
+
+@media (max-width: 1090px){
     .contact-me-container{
-        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
     }
+
+    .contact-header-wrapper p, .contact-button-wrapper {
+        padding-top: 16px;
+    }
+
+   
 }
 
 .button-getintouch{
@@ -676,6 +687,15 @@ line-height: 1.2em;
     padding-top: 32px;
 }
 
+@media (max-width: 768px){
+    .footer-wrapper{
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+    .footer-list-wrap li{
+        padding-top: 8px;
+    }
+}
 
 .footer{
     background-color: var(--main-background-color);    
