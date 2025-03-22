@@ -25,3 +25,9 @@ Adobe XD, WordPress, Woocommerce, Elementor, Crocoblocks, HTML, CSS, and a touch
 # Contact Me
 
 If you like  my work, don't hesitate to contact me. Feel free to email me at balionisd@gmail.com whether you're interested in collaborating on a project or just want to share some amazing coding tips, I'm always keen to learn better and faster ways to make cool websites.
+
+
+# Command to run
+
+To start local:
+eleventy --serve
