@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyGoogleFonts);
     /* PassThrought */
     eleventyConfig.addPassthroughCopy("css/style.css");
+    eleventyConfig.addPassthroughCopy("css/hero.css");
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("images/png");
     eleventyConfig.addPassthroughCopy("site.json");

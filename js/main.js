@@ -18,7 +18,7 @@ function defaultease(x){
         - Determines the easing function (ref easing.net)
         - Uses duration to calculate the rate of change on smooth scroll animation    
 */
-const lenis = new Lenis({
+ /* const lenis = new Lenis({
     duration: 1.4,
     easing: defaultease,
     smooth: true,
@@ -31,7 +31,7 @@ const lenis = new Lenis({
   
   requestAnimationFrame(raf)
 
-
+*/
   document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
 
@@ -43,4 +43,51 @@ const lenis = new Lenis({
 
       form.classList.add('was-validated'); // Add Bootstrap validation class for visual feedback
     }, false);
-  });
+  }); 
+  console.log("Main Js connected");
+
+const gallery = document.querySelector('.cc-portfolio');
+const track = document.querySelector('.cc-portfolio-gallery-wrap');
+const cards = document.querySelectorAll('.cc-portfolio-card');
+const easing = 0.5;
+let startY = 0;
+let endY = 0;
+let raf;
+
+const lerp = (start,end,t) => start * (1-t) + end * t;
+
+function updateScroll() {
+  startY = lerp(startY,endY,easing);
+  /*gallery.style.height = `${track.clientHeight}px`; 
+  track.style.transform = `translateY(-${startY}px)`;*/
+  activateParallax();
+  raf = requestAnimationFrame(updateScroll);
+  if (startY.toFixed(1) === window.scrollY.toFixed(1)) cancelAnimationFrame(raf);
+  console.log("Update Scroll not working");
+}
+
+function startScroll() {
+  endY = window.scrollY; 
+  cancelAnimationFrame(raf);
+  raf = requestAnimationFrame(updateScroll);
+}
+
+function parallax(card) {
+  const wrapper = card.querySelector('.cc-card-image-wrap');
+  const diff = card.offsetHeight - wrapper.offsetHeight;
+  const {top} = card.getBoundingClientRect();
+  const progress = top / window.innerHeight;
+  const yPos = diff * progress;
+  wrapper.style.transform = `translateY(${yPos}px)`;
+}
+
+const activateParallax = () => cards.forEach(parallax);
+
+function init() {
+  activateParallax();
+  startScroll();
+}
+
+window.addEventListener('load',updateScroll,false);
+window.addEventListener('scroll',init,false);
+window.addEventListener('resize',updateScroll,false);
