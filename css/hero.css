@@ -14,7 +14,7 @@ header.cc-hero{
     flex-direction: column;
     justify-content: center; 
     align-items: center;    
-    height: 816px;             
+    height: 804px;           
     padding-left: var(--layout-padding-left);
     padding-right: var(--layout-padding-right);
     position: relative;
@@ -22,9 +22,9 @@ header.cc-hero{
 
 header.cc-hero::before{
     --size: 24px;
-    --line: rgba(255, 255, 255, 0.5);
+    --line: rgba(255, 255, 255, 0.24);
     content: '';
-    height: 816px;
+    height: 1246px;
     width: 100%;
     position: absolute;
     background: linear-gradient( 90deg, var(--line) 1px, transparent 1px var(--size) ) 50% 50% / var(--size) var(--size), linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
@@ -38,6 +38,7 @@ header.cc-hero::before{
 .cc-hero-content-wrap{
     position: relative;
     text-align: left;
+    margin-top: 8px;
       
 }
 
@@ -70,7 +71,7 @@ ul.cc-hero-skills-pills{
 }
 
 .cc-skill-pill{
-    border: 1px solid rgba(255, 255, 255, 0.2); 
+   
     border-radius: 25px;
     padding: 0.4em 1.6em; 
     text-align: center;
@@ -83,7 +84,6 @@ ul.cc-hero-skills-pills{
     background: rgba(202, 187, 187, 0.1);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px); 
-    box-shadow: 0 4px 24px rgba(233, 233, 233, 0.103);
 
 }
 
