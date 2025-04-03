@@ -38,12 +38,16 @@ header.cc-hero::before{
 .cc-hero-content-wrap{
     position: relative;
     text-align: left;
-    margin-top: 8px;
       
 }
 
+.cc-hero-headers{
+  margin-bottom: 8px;
+}
+
+
 .cc-hero-title{
- font-size: 48px;
+ font-size: 64px;
  font-weight: 600;
  margin: 0;
  position: relative;
@@ -53,30 +57,31 @@ header.cc-hero::before{
 
 
 .cc-hero-subtitle{
- font-size: 29px;
+ font-size: 24px;
  font-weight: 400;
  margin: 0;
- transform: translateY(4px);
+ transform: translateY(-4px);
 }
 
 .cc-hero-skills-wrap{
-    transform: translateY(22px);
+    transform: translateY(8px);
 }
 ul.cc-hero-skills-pills{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    gap: 0.5rem;
+    gap: 8px;
     padding: 0;   
+    margin-bottom: 0px;
 }
 
 .cc-skill-pill{
    
     border-radius: 25px;
-    padding: 0.4em 1.6em; 
+    padding: 4.5px 21px;
     text-align: center;
 
-    font-size: 14px;
+    font-size: 18px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +94,7 @@ ul.cc-hero-skills-pills{
 
 .cc-hero-socials {
  
-transform: translateY(26px);
+transform: translateY(38px);
 
 a {
   text-decoration: none !important;
@@ -98,6 +103,7 @@ a {
 }
 
 /* Portfolio cards  */
+
 
 
 .cc-portfolio-wrapper{
