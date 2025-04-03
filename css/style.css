@@ -2,6 +2,7 @@
     --accent-color: #0064fd;
     --accent-color2: #16aedb;
     --main-background-color: #1a1a1d;
+    --accent-color-new: cornflowerblue;
 }
 
 
@@ -56,7 +57,7 @@
 /***** Sections *****/  
 
 
-html.lenis, html.lenis body {
+/* html.lenis, html.lenis body {
     height: auto;
   }
   
@@ -74,12 +75,18 @@ html.lenis, html.lenis body {
   
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
-  }
+  } */
 
 
 /***** End Section *****/
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
-    min-height: 100vh;
+   /* min-height: 100vh; */
     background-color: #1a1a1d;
     display: flex;
     flex-direction: column;
@@ -108,7 +115,7 @@ body{
 }
 
 .icon-colour{
-    color:var(--accent-color);
+    color:var(--accent-color-new);
     font-size: 50px;
     margin-right: 16px;
 }

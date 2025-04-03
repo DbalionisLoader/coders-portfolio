@@ -49,7 +49,7 @@ function defaultease(x){
 const gallery = document.querySelector('.cc-portfolio');
 const track = document.querySelector('.cc-portfolio-gallery-wrap');
 const cards = document.querySelectorAll('.cc-portfolio-card');
-const easing = 0.5;
+const easing = 0.02;
 let startY = 0;
 let endY = 0;
 let raf;

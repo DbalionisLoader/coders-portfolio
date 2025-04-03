@@ -22,7 +22,7 @@ header.cc-hero{
 
 header.cc-hero::before{
     --size: 24px;
-    --line: rgba(255, 255, 255, 0.24);
+    --line: rgba(255, 255, 255, 0.4);
     content: '';
     height: 1246px;
     width: 100%;
@@ -87,6 +87,15 @@ ul.cc-hero-skills-pills{
 
 }
 
+.cc-hero-socials {
+ 
+transform: translateY(26px);
+
+a {
+  text-decoration: none !important;
+
+}
+}
 
 /* Portfolio cards  */
 
@@ -195,5 +204,20 @@ ul.cc-hero-skills-pills{
  backface-visibility: hidden;
 }
 
+
+@media(max-width: 722px){
+  header.cc-hero{
+    height: 608px;           
+  }
+}
+
+@media(max-width: 490px){
+  .cc-portfolio-card {
+  
+    & .cc-card-image-wrap {
+      height: 180%;
+    }
+  }
+}
 
 
