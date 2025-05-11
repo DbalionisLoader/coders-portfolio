@@ -18,6 +18,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("examplePosts", function(collection) {
         return collection.getFilteredByGlob("./posts/examples/*.md");
       });
+    
+      eleventyConfig.addCollection("fantasticPosts", function(collection) {
+        return collection.getFilteredByGlob("./posts/fantastic/*.md");
+      });  
+      
 
       eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("./posts/portfolio/*.md");
