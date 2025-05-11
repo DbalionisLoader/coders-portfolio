@@ -1,13 +1,13 @@
 ---
-title: Thornhill Aesthetics
-name:  Thornhill Aesthetics
+title: Dynamiczm
+name:  Dynamiczm
 typeOfWebsite: Brochure
 Role: Developer
-imageUrl: ../images/Thorn-Dental.png
-mobileUrl: ../images/Thorn-Dental.png
-imageAlt: A screenshot of Thornhill Aesthetics website homepage
-websiteLink: https://www.thornhillaesthetics.co.uk/
-date: 2025-03-20
+imageUrl: ../images/Dynamic-bg.png
+mobileUrl: ../images/Dynamic-bg.png
+imageAlt: A screenshot of dynamiczm fire alarm system website homepage
+websiteLink: https://dynamiczm.com/
+date: 2025-04-10
 tech:
 - WordPress
 - PHP

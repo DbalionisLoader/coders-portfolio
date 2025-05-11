@@ -52,18 +52,19 @@ eleventyImport:
 
 {% if collections.fantasticPosts and collections.fantasticPosts.length > 0 %}
     {% for post in collections.fantasticPosts %}
+    
     <div class="cc-portfolio-card">
-      <div class="cc-card-image-wrap">
-        <picture>
-          <source media="(min-width:950px)" srcset="{{ post.data.imageUrl }}">
-          <img src="{{ post.data.mobileUrl }}" alt="{{ post.data.imageAlt }}">
-        </picture>
+      <div class="cc-card-image-wrap">  
+        <a href="{{ post.data.websiteLink }}" target="_blank" rel="noopener noreferrer">
+          <picture>
+           <source media="(min-width:950px)" srcset="{{ post.data.imageUrl }}">
+            <img src="{{ post.data.mobileUrl }}" alt="{{ post.data.imageAlt }}">
+          </picture>
       </div>
-      <a href="{{ post.data.websiteLink }}" target="_blank" rel="noopener noreferrer">
-        <div class="cc-card-title">
-          <h3>{{ post.data.title }}</h3>
-        </div>
-      </a>
+          <div class="cc-card-title">
+            <h3>{{ post.data.title }}</h3>
+          </div>
+        </a>
       </div> 
     {% endfor %}  
   {% endif %}   
