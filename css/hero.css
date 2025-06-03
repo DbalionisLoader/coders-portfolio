@@ -25,7 +25,7 @@ header.cc-hero::before{
     --size: 24px;
     --line: rgba(255, 255, 255, 0.4);
     content: '';
-    height: 1246px;
+    height: 804px;
     width: 100%;
     position: absolute;
     background: linear-gradient( 90deg, var(--line) 1px, transparent 1px var(--size) ) 50% 50% / var(--size) var(--size), linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
@@ -234,7 +234,40 @@ a {
 .cc-portfolio-card:hover .cc-card-title{
  opacity: 1;
  will-change: transform;
- backface-visibility: hidden;
+}
+
+
+.cc-tech-skill-pill-list{
+  position: absolute;
+  z-index: 99;
+  top: 12px;
+  left: 12px;
+  opacity: 1;
+  will-change: transform;
+  opacity: 0;  
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cc-portfolio-card:hover .cc-tech-skill-pill-list{
+ opacity: 1;
+ will-change: transform;
+}
+
+
+.cc-tech-pill{
+   border-radius: 25px;
+   padding: 4.5px 21px;
+   text-align: center;
+
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #1a1a1d;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); 
+
 }
 
 

@@ -54,6 +54,13 @@ eleventyImport:
     {% for post in collections.fantasticPosts %}
     
     <div class="cc-portfolio-card">
+        {% if  post.data.tech %}
+        <ul class="cc-hero-skills-pills cc-tech-skill-pill-list">
+          {% for techitem in post.data.tech %}
+            <li class="cc-tech-pill">{{ techitem }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       <div class="cc-card-image-wrap">  
         <a href="{{ post.data.websiteLink }}" target="_blank" rel="noopener noreferrer">
           <picture>
@@ -61,6 +68,7 @@ eleventyImport:
             <img src="{{ post.data.mobileUrl }}" alt="{{ post.data.imageAlt }}">
           </picture>
       </div>
+
           <div class="cc-card-title">
             <h3>{{ post.data.title }}</h3>
           </div>
