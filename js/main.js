@@ -9,29 +9,6 @@ function defaultease(x){
 }
 
 
-/*  smooth scrolling functionality
-
-    1. duration:
-        - Specifies the duration of the smooth scroll animation 
-        - in seconds
-    2. easing:
-        - Determines the easing function (ref easing.net)
-        - Uses duration to calculate the rate of change on smooth scroll animation    
-*/
- /* const lenis = new Lenis({
-    duration: 1.4,
-    easing: defaultease,
-    smooth: true,
-});
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  
-  requestAnimationFrame(raf)
-
-*/
   document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
 
@@ -44,8 +21,7 @@ function defaultease(x){
       form.classList.add('was-validated'); // Add Bootstrap validation class for visual feedback
     }, false);
   }); 
-  console.log("Main Js connected");
-
+ 
 const gallery = document.querySelector('.cc-portfolio');
 const track = document.querySelector('.cc-portfolio-gallery-wrap');
 const cards = document.querySelectorAll('.cc-portfolio-card');
@@ -63,7 +39,6 @@ function updateScroll() {
   activateParallax();
   raf = requestAnimationFrame(updateScroll);
   if (startY.toFixed(1) === window.scrollY.toFixed(1)) cancelAnimationFrame(raf);
-  console.log("Update Scroll not working");
 }
 
 function startScroll() {

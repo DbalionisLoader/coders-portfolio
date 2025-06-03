@@ -114,12 +114,21 @@ a {
 }
 
 .cc-portfolio-header-wrap{
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 28px;
+  padding-bottom: 128px;
+
+  & .cc-porfolio-header-icon-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   & h2{
-    font-size: 36px;
+    font-size: 3rem;
     margin-bottom: 0px;
+    text-align: center;
+    font-weight: 600;
   }
   
 }

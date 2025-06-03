@@ -9,9 +9,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/style.css");
     eleventyConfig.addPassthroughCopy("css/hero.css");
     eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("icons");
     eleventyConfig.addPassthroughCopy("images/png");
     eleventyConfig.addPassthroughCopy("site.json");
     eleventyConfig.addPassthroughCopy("js/main.js");
+    eleventyConfig.addPassthroughCopy("js/icon_render.js");
     /*Allow redirect file to _site */
     eleventyConfig.addPassthroughCopy("_redirects");
     /* Custom Filters */
