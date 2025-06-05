@@ -9,7 +9,12 @@ let scene, camera, renderer, iconMesh, mouseX = 0, mouseY = 0;
 function init() {
   // 1) Grab the <canvas id="three-canvas"> on page
   const canvas = document.querySelector('#three-canvas');
-  if (canvas) { //Add check to prevent any critical js errors
+  
+  if (!canvas) { //Add check to prevent any critical js errors
+    console.log("Work section Canvas element was not found or created");
+    return;
+  };
+
   renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     antialias: true,
@@ -29,8 +34,13 @@ function init() {
   camera.position.set(0, 1, 3);
   scene.add(camera);
 
+   
   // 3) Lights
-  const hemi = new THREE.HemisphereLight(0xffffff, 0xffffff, 1);
+  const ambient = new THREE.AmbientLight(0xffffff, 1);
+  scene.add(ambient); 
+
+ 
+  const hemi = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
   hemi.position.set(0, 1, 0);
   scene.add(hemi);
 
@@ -38,13 +48,21 @@ function init() {
   dir.position.set(0.5, 1, 0.5);
   scene.add(dir);
 
+
   // 4) Load your GLB (adjust the path as needed)
   const loader = new GLTFLoader();
   loader.load(
     '../Icons/tag_folder.glb',
     (gltf) => {
-      iconMesh = gltf.scene; 
-      iconMesh.scale.set(1, 1, 1); //Adjust icon size here
+     iconMesh = gltf.scene; 
+     iconMesh.traverse((child) => { //Loop all render surfaces and change meterial properties to reflect light correctly
+        if (child.isMesh && child.material.isMeshStandardMaterial) {
+          child.material.metalness = 0;
+          child.material.roughness = 1;
+          child.material.needsUpdate = true;
+        }
+      });
+      iconMesh.scale.set(1, 1, 1); //Adjust icon size here IMPORTANT
       scene.add(iconMesh); // Push the render model into the scene
       animate();  //Call animate function after render is complete
     },
@@ -68,9 +86,6 @@ function init() {
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
   });
- } else {
-    console.log("Work section Canvas element was not found or created");
- };
 }
 
 function animate() {
