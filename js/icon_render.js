@@ -7,7 +7,7 @@ console.log("Bundler Working");
 let scene, camera, renderer, iconMesh, mouseX = 0, mouseY = 0;
 
 function isMobileDevice(){
-  const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const isMobile = 'ontouchstart' in window;
   console.log('isMobileDevice', isMobile);
   return isMobile;
 }
