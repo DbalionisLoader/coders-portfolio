@@ -3,6 +3,7 @@
     --accent-color2: #16aedb;
     --main-background-color: #1a1a1d;
     --accent-color-new: cornflowerblue;
+    --background-black: #010102;
 }
 
 
@@ -577,10 +578,10 @@ line-height: 1.2em;
 
 /* Contact me footer - START */
 .contact-me-wrapper{
-    background-color: #020202;  
+    background-color:#0d0d0d;
     padding-top: 64px;
     padding-bottom: 64px;
-  }
+}
 
 .contact-me-container{
     width: 1420px;
@@ -694,7 +695,7 @@ line-height: 1.2em;
 }
 
 .footer{
-    background-color: var(--main-background-color);    
+    background-color: var(--background-black);    
     flex: 0 0 auto;
 }
 
