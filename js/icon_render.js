@@ -63,7 +63,7 @@ function initDesktop() {
     (gltf) => {
      iconMesh = gltf.scene; 
       changeMeterialProperty(iconMesh);
-      iconMesh.scale.set(1, 1, 1); //Adjust icon size here IMPORTANT
+      iconMesh.scale.set(1.4, 1.4, 1.4); //Adjust icon size here IMPORTANT
       scene.add(iconMesh); // Push the render model into the scene
       animate();  //Call animate function after render is complete
     },
@@ -128,7 +128,7 @@ function initMobile(){
     (gltf) => {
       iconMesh = gltf.scene;
       changeMeterialProperty(iconMesh);
-      iconMesh.scale.set(0.8, 0.8, 0.8);
+      iconMesh.scale.set(1.2, 1.2, 1.2);
       iconMesh.rotation.y = THREE.MathUtils.degToRad(25);
 
       scene.add(iconMesh); //Add the asset to scene
