@@ -159,15 +159,6 @@ function initMobile(){
   canvas.addEventListener('touchend', () => {
     isDragging = false;
   });
-
-  //Add device tilt viewing
-   window.addEventListener('deviceorientation', (event) => {
-    if (!iconMesh) return;
-    const tiltX = THREE.MathUtils.degToRad(event.beta) * 0.002;
-    const tiltY = THREE.MathUtils.degToRad(event.gamma) * 0.002;
-    iconMesh.rotation.x = THREE.MathUtils.clamp(tiltX, -0.5, 0.5);
-    iconMesh.rotation.y = THREE.MathUtils.clamp(tiltY, -0.5, 0.5);
-  }); 
   
   window.addEventListener('resize', handleResize.bind(null, canvas, camera, renderer));
 
