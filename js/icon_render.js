@@ -95,7 +95,7 @@ function initMobile(){
 
   renderer = new THREE.WebGLRenderer({
     canvas,
-    antialias: false,
+    antialias: true,
     alpha: true
   });
 
@@ -129,6 +129,8 @@ function initMobile(){
       iconMesh = gltf.scene;
       changeMeterialProperty(iconMesh);
       iconMesh.scale.set(0.8, 0.8, 0.8);
+      iconMesh.rotation.y = THREE.MathUtils.degToRad(25);
+
       scene.add(iconMesh); //Add the asset to scene
       animate();
   },
