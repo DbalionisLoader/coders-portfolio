@@ -682,6 +682,7 @@ line-height: 1.2em;
 /* Footer links  - START */
 .footer-wrapper{
     padding-top: 32px;
+    background-color: var(--background-black);
 }
 
 @media (max-width: 768px){
