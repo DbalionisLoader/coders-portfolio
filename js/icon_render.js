@@ -2,13 +2,13 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-console.log("Bundler Working");
+//console.log("Bundler Working");
 
 let scene, camera, renderer, iconMesh, mouseX = 0, mouseY = 0;
 
 function isMobileDevice(){
   const isMobile = 'ontouchstart' in window;
-  console.log('isMobileDevice', isMobile);
+ // console.log('isMobileDevice', isMobile);
   return isMobile;
 }
 

@@ -9,18 +9,7 @@ function defaultease(x){
 }
 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contactForm');
 
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) {
-        event.preventDefault(); // Prevent form submission
-        event.stopPropagation(); // Stop form from closing offcanvas
-      }
-
-      form.classList.add('was-validated'); // Add Bootstrap validation class for visual feedback
-    }, false);
-  }); 
  
 const gallery = document.querySelector('.cc-portfolio');
 const track = document.querySelector('.cc-portfolio-gallery-wrap');
@@ -34,8 +23,6 @@ const lerp = (start,end,t) => start * (1-t) + end * t;
 
 function updateScroll() {
   startY = lerp(startY,endY,easing);
-  /*gallery.style.height = `${track.clientHeight}px`; 
-  track.style.transform = `translateY(-${startY}px)`;*/
   activateParallax();
   raf = requestAnimationFrame(updateScroll);
   if (startY.toFixed(1) === window.scrollY.toFixed(1)) cancelAnimationFrame(raf);
